@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en" color-scheme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services | Ivy's Beauty Secret — Ladies Salon & Spa Abu Dhabi</title>
+  <meta name="description" content="Explore Ivy's Beauty Secret's full range of luxury beauty services in Abu Dhabi — hair, makeup, bridal, skin & facial, nails, waxing & threading, and spa & massage.">
+
+  <meta property="og:title" content="Services | Ivy's Beauty Secret Ladies Salon & Spa">
+  <meta property="og:description" content="Hair, makeup, bridal, skin, nails, waxing, threading, and spa — explore every service at Ivy's Beauty Secret Abu Dhabi.">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;0,700;1,300;1,400&family=Poppins:wght@300;400;500;600&display=optional" rel="stylesheet">
+
+  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1/src/index.js" defer></script>
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="pages.css">
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       NAVIGATION
+  ═══════════════════════════════════════════ -->
+  <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo" aria-label="Ivy's Beauty Secret — Home">
+        <img src="https://i.imgur.com/placeholder-logo.png"
+             alt="Ivy's Beauty Secret Ladies Salon & Spa"
+             class="nav__logo-img"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+        <div class="nav__logo-text" style="display:none">
+          <span class="nav__logo-primary">IVY'S BEAUTY</span>
+          <span class="nav__logo-secondary">SECRET</span>
+        </div>
+      </a>
+
+      <ul class="nav__links" role="list">
+        <li><a href="index.html" class="nav__link">Home</a></li>
+        <li><a href="about.html" class="nav__link">About</a></li>
+        <li><a href="services.html" class="nav__link nav__link--active">Services</a></li>
+        <li><a href="gallery.html" class="nav__link">Gallery</a></li>
+        <li><a href="pricing.html" class="nav__link">Pricing</a></li>
+        <li><a href="testimonials.html" class="nav__link">Testimonials</a></li>
+        <li><a href="contact.html" class="nav__link">Contact</a></li>
+      </ul>
+
+      <a href="contact.html#booking" class="nav__cta btn btn--pink">Reserve Your Experience</a>
+
+      <button class="nav__hamburger" id="navToggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileNav">
+        <span class="nav__hamburger-bar"></span>
+        <span class="nav__hamburger-bar"></span>
+        <span class="nav__hamburger-bar"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav Overlay -->
+  <div class="mobile-nav" id="mobileNav" role="dialog" aria-modal="true" aria-label="Navigation menu">
+    <div class="mobile-nav__inner">
+      <button class="mobile-nav__close" id="navClose" aria-label="Close navigation menu">
+        <i class="ph-thin ph-x"></i>
+      </button>
+      <nav class="mobile-nav__links" aria-label="Mobile navigation">
+        <a href="index.html" class="mobile-nav__link">Home</a>
+        <a href="about.html" class="mobile-nav__link">About</a>
+        <a href="services.html" class="mobile-nav__link mobile-nav__link--active">Services</a>
+        <a href="gallery.html" class="mobile-nav__link">Gallery</a>
+        <a href="pricing.html" class="mobile-nav__link">Pricing</a>
+        <a href="testimonials.html" class="mobile-nav__link">Testimonials</a>
+        <a href="contact.html" class="mobile-nav__link">Contact</a>
+      </nav>
+      <div class="mobile-nav__footer">
+        <p class="mobile-nav__contact">+971 50 992 1215</p>
+        <p class="mobile-nav__contact">@ivysbeautysecret</p>
+        <div class="mobile-nav__socials">
+          <a href="https://www.instagram.com/ivysbeautysecret/" target="_blank" rel="noopener" aria-label="Follow Ivy's on Instagram" class="mobile-nav__social-icon"><i class="ph-thin ph-instagram-logo"></i></a>
+          <a href="https://wa.me/971509921215" target="_blank" rel="noopener" aria-label="Chat on WhatsApp" class="mobile-nav__social-icon"><i class="ph-thin ph-whatsapp-logo"></i></a>
+          <a href="#" target="_blank" rel="noopener" aria-label="Follow on TikTok" class="mobile-nav__social-icon"><i class="ph-thin ph-tiktok-logo"></i></a>
+          <a href="#" target="_blank" rel="noopener" aria-label="Follow on Facebook" class="mobile-nav__social-icon"><i class="ph-thin ph-facebook-logo"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════════
+       SERVICES HERO
+  ═══════════════════════════════════════════ -->
+  <section class="page-hero page-hero--services" aria-labelledby="services-hero-heading">
+    <img
+      src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=1920&q=80"
+      alt="Luxury beauty services at Ivy's Beauty Secret Abu Dhabi"
+      class="page-hero__bg img-hero"
+      width="1920" height="1100" loading="eager" fetchpriority="high">
+    <div class="page-hero__overlay" aria-hidden="true"></div>
+    <div class="page-hero__content" data-animate="fade-up">
+      <div class="ornament-line ornament-line--center" aria-hidden="true"></div>
+      <p class="section-script">Indulge in Every Detail</p>
+      <h1 class="page-hero__headline" id="services-hero-heading">EVERY SERVICE,<br>BEAUTIFULLY DONE</h1>
+      <p class="page-hero__body">From hair to bridal to spa — discover the full Ivy's experience.</p>
+    </div>
+
+    <!-- Category Quick Nav -->
+    <nav class="services-quicknav" aria-label="Jump to service category">
+      <a href="#hair" class="services-quicknav__pill">Hair</a>
+      <a href="#makeup" class="services-quicknav__pill">Makeup</a>
+      <a href="#bridal" class="services-quicknav__pill">Bridal</a>
+      <a href="#skin" class="services-quicknav__pill">Skin &amp; Facial</a>
+      <a href="#nails" class="services-quicknav__pill">Nails</a>
+      <a href="#threading" class="services-quicknav__pill">Threading &amp; Waxing</a>
+      <a href="#spa" class="services-quicknav__pill">Spa &amp; Massage</a>
+    </nav>
+
+    <div class="section-exit section-exit--to-white" aria-hidden="true"></div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       HAIR SERVICES
+  ═══════════════════════════════════════════ -->
+  <section class="service-block" id="hair" aria-labelledby="hair-block-heading">
+    <div class="container">
+      <div class="service-block__inner">
+
+        <div class="service-block__image-wrap" data-animate="slide-left">
+          <img
+            src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=900&q=80"
+            alt="Hair styling and colour services at Ivy's Beauty Secret"
+            class="service-block__image img-card" width="900" height="1000" loading="lazy">
+        </div>
+
+        <div class="service-block__content" data-animate="slide-right">
+          <div class="ornament-line" aria-hidden="true"></div>
+          <p class="section-script">Hair Artistry</p>
+          <h2 class="section-h2" id="hair-block-heading">EVERY STRAND,<br>PERFECTED</h2>
+          <p class="section-body" style="margin-top:0; margin-bottom:28px;">
+            From precision cuts to transformative colour — our hair specialists
+            bring international training to every appointment.
+          </p>
+
+          <ul class="service-list" role="list">
+            <li class="service-list__item">
+              <span class="service-list__name">Haircut &amp; Trim</span>
+              <a href="contact.html#booking" class="service-list__book">Book →</a>
+            </li>
+            <li class="service-list__item">
+              <span class="service-list__name">Balayage</span>
+              <a href="contact.html#booking" class="service-list__book">Book →</a>
+            </li>
+            <li class="service-list__item">
+              <span class="service-list__name">Ombré &amp; Highlights</span>
+              <a href="contact.html#booking" class="service-list__book">Book →</a>
+            </li>
+            <li class="service-list__item">
+              <span class="service-list__name">Lowlights &amp; Peekaboo Highlights</span>
+              <a href="contact.html#booking" class="service-list__book">Book →</a>
+            </li>
+            <li class="service-list__item">
+              <span class="service-list__name">Root Touch-up &amp; Hair Colouring</span>
+              <a href="contact.html#booking" class="service-list__book">Book →</a>
+            </li>
+            <li class="service-list__item">
+              <span class="service-list__name">Organic Keratin Treatment</span>
+              <a href="contact.html#booking" class="service-list__book">Book →</a>
+            </li>
+            <li class="service-list__item">
+              <span class="service-list__name">Hair Spa &amp; Conditioning</span>
+              <a href="contact.html#booking" class="service-list__book">Book →</a>
+            </li>
+            <li class="service-list__item">
+              <span class="service-list__name">Hair Extensions</span>
+              <a href="contact.html#booking" class="service-list__book">Book →</a>
+            </li>
+            <li class="service-list__item">
+              <span class="service-list__name">Blowouts &amp; Hair Styling</span>
+              <a href="contact.html#booking" class="service-list__book">Book →</a>
+            </li>
+            <li class="service-list__item">
+              <span class="service-list__name">Hair Threading</span>
+              <a href="contact.html#booking" class="service-list__book">Book →</a>
+            </li>
+          </ul>
+
+          <a href="pricing.html#hair" class="story__link" style="margin-top:24px;">
+            View Hair Pricing <span class="story__link-arrow">→</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       MAKEUP
+  ═══════════════════════════════════════════ -->
+  <section class="service-block service-block--alt" id="makeup" aria-labelledby="makeup-block-heading">
+    <div class="container">
+      <div class="service-block__inner service-block__inner--reverse">
+
+        <div class="service-block__content" data-animate="slide-left">
+          <div class="ornament-line" aria-hidden="true"></div>
+          <p class="section-script">Makeup Atelier</p>
+          <h2 class="section-h2" id="makeup-block-heading">GLAMOUR, CRAFTED<br>FOR YOU</h2>
+          <p class="section-body" style="margin-top:0; margin-bottom:28px;">
+            Whether it's a party, a photoshoot, or an everyday glow — our
+            artists tailor every look to you.
+          </p>
+
+          <ul class="service-list" role="list">
+            <li class="service-list__item">
+              <span class="service-list__name">Party Makeup</span>
+              <a href="contact.html#booking" class="service-list__book">Book →</a>
+            </li>
+            <li class="service-list__item">
+              <span class="service-list__name">Makeovers</span>
+              <a href="contact.html#booking" class="service-list__book">Book →</a>
+            </li>
+            <li class="service-list__item">
+              <span class="service-list__name">Everyday Makeup Services</span>
+              <a href="contact.html#booking" class="service-list__book">Book →</a>
+            </li>
+            <li class="service-list__item">
+              <span class="service-list__name">Gele Tying &amp; Makeup</span>
+              <a href="contact.html#booking" class="service-list__book">Book →</a>
+            </li>
+          </ul>
+
+          <a href="pricing.html#makeup" class="story__link" style="margin-top:24px;">
+            View Makeup Pricing <span class="story__link-arrow">→</span>
+          </a>
+        </div>
+
+        <div class="service-block__image-wrap" data-animate="slide-right">
+          <img
+            src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=900&q=80"
+            alt="Professional makeup services at Ivy's Beauty Secret"
+            class="service-block__image img-card" width="900" height="1000" loading="lazy">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       BRIDAL
+  ═══════════════════════════════════════════ -->
+  <section class="service-block" id="bridal" aria-labelledby="bridal-block-heading">
+    <div class="container">
+      <div class="service-block__inner">
+
+        <div class="service-block__image-wrap" data-animate="slide-left">
+          <img
+            src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=900&q=80"
+            alt="Bridal makeup and hair styling at Ivy's Beauty Secret"
+            class="service-block__image img-card" width="900" height="1000" loading="lazy">
+        </div>
+
+        <div class="service-block__content" data-animate="slide-right">
+          <div class="ornament-line ornament-line--gold" aria-hidden="true"></div>
+          <p class="section-script section-script--gold">Bridal Suite</p>
+          <h2 class="section-h2" id="bridal-block-heading">YOUR DAY,<br>BEAUTIFULLY REMEMBERED</h2>
+          <p class="section-body" style="margin-top:0; margin-bottom:28px;">
+            From your first trial to your wedding morning — every detail,
+            beautifully considered.
+          </p>
+
+          <ul class="service-list" role="list">
+            <li class="service-list__item">
+              <span class="service-list__name">Full Bridal Package</span>
+              <a href="contact.html#booking" class="service-list__book">Book →</a>
+            </li>
+            <li class="service-list__item">
+              <span class="service-list__name">Bridal Hair Styling</span>
+              <a href="contact.html#booking" class="service-list__book">Book →</a>
+            </li>
+            <li class="service-list__item">
+              <span class="service-list__name">Bridal Makeup &amp; Trial</span>
+              <a href="contact.html#booking" class="service-list__book">Book →</a>
+            </li>
+          </ul>
+
+          <a href="https://wa.me/971509921215?text=Hello%20Ivy%27s%20Beauty%20Secret.%20I%20would%20like%20to%20arrange%20a%20bridal%20consultation."
+             class="btn btn--gold" target="_blank" rel="noopener" style="margin-top:24px;">
+            Arrange Your Bridal Consultation ✦
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       SKIN & FACIAL
+  ═══════════════════════════════════════════ -->
+  <section class="service-block service-block--alt" id="skin" aria-labelledby="skin-block-heading">
+    <div class="container">
+      <div class="service-block__inner service-block__inner--reverse">
+
+        <div class="service-block__content" data-animate="slide-left">
+          <div class="ornament-line" aria-hidden="true"></div>
+          <p class="section-script">Skin Sanctuary</p>
+          <h2 class="section-h2" id="skin-block-heading">LUMINOUS SKIN,<br>REVEALED</h2>
+          <p class="section-body" style="margin-top:0; margin-bottom:28px;">
+            Science-backed facial treatments designed to reveal your most
+            radiant skin.
+          </p>
+
+          <ul class="service-list" role="list">
+            <li class="service-list__item"><span class="service-list__name">HydraFacial</span><a href="contact.html#booking" class="service-list__book">Book →</a></li>
+            <li class="service-list__item"><span class="service-list__name">Organic Facial</span><a href="contact.html#booking" class="service-list__book">Book →</a></li>
+            <li class="service-list__item"><span class="service-list__name">Acne Treatments</span><a href="contact.html#booking" class="service-list__book">Book →</a></li>
+            <li class="service-list__item"><span class="service-list__name">Botox Treatment</span><a href="contact.html#booking" class="service-list__book">Book →</a></li>
+            <li class="service-list__item"><span class="service-list__name">Collagen Treatment</span><a href="contact.html#booking" class="service-list__book">Book →</a></li>
+            <li class="service-list__item"><span class="service-list__name">Bleaching</span><a href="contact.html#booking" class="service-list__book">Book →</a></li>
+          </ul>
+
+          <a href="pricing.html#skin" class="story__link" style="margin-top:24px;">
+            View Skin &amp; Facial Pricing <span class="story__link-arrow">→</span>
+          </a>
+        </div>
+
+        <div class="service-block__image-wrap" data-animate="slide-right">
+          <img
+            src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=900&q=80"
+            alt="Facial and skin care treatments at Ivy's Beauty Secret"
+            class="service-block__image img-card" width="900" height="1000" loading="lazy">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       NAILS
+  ═══════════════════════════════════════════ -->
+  <section class="service-block" id="nails" aria-labelledby="nails-block-heading">
+    <div class="container">
+      <div class="service-block__inner">
+
+        <div class="service-block__image-wrap" data-animate="slide-left">
+          <img
+            src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=900&q=80"
+            alt="Nail art and manicure services at Ivy's Beauty Secret"
+            class="service-block__image img-card" width="900" height="1000" loading="lazy">
+        </div>
+
+        <div class="service-block__content" data-animate="slide-right">
+          <div class="ornament-line" aria-hidden="true"></div>
+          <p class="section-script">Nail Couture</p>
+          <h2 class="section-h2" id="nails-block-heading">POLISHED<br>PERFECTION</h2>
+          <p class="section-body" style="margin-top:0; margin-bottom:28px;">
+            Clean, careful, beautifully finished — every time.
+          </p>
+
+          <ul class="service-list" role="list">
+            <li class="service-list__item"><span class="service-list__name">Manicure &amp; Manicure Spa</span><a href="contact.html#booking" class="service-list__book">Book →</a></li>
+            <li class="service-list__item"><span class="service-list__name">Pedicure &amp; Pedicure Spa</span><a href="contact.html#booking" class="service-list__book">Book →</a></li>
+            <li class="service-list__item"><span class="service-list__name">Gel Polish</span><a href="contact.html#booking" class="service-list__book">Book →</a></li>
+            <li class="service-list__item"><span class="service-list__name">Polygel Extensions</span><a href="contact.html#booking" class="service-list__book">Book →</a></li>
+            <li class="service-list__item"><span class="service-list__name">Gel Extensions</span><a href="contact.html#booking" class="service-list__book">Book →</a></li>
+          </ul>
+
+          <a href="pricing.html#nails" class="story__link" style="margin-top:24px;">
+            View Nail Pricing <span class="story__link-arrow">→</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       THREADING & WAXING
+  ═══════════════════════════════════════════ -->
+  <section class="service-block service-block--minimal" id="threading" aria-labelledby="threading-block-heading">
+    <div class="container">
+      <div class="section-header section-header--center" data-animate="fade-up">
+        <p class="section-script">Effortlessly Smooth</p>
+        <h2 class="section-h2" id="threading-block-heading">THREADING &amp; WAXING</h2>
+      </div>
+
+      <div class="service-minimal-grid" data-animate="fade-up">
+        <div class="service-minimal-card">
+          <h3 class="service-minimal-card__title">Eyebrow Threading</h3>
+          <a href="contact.html#booking" class="service-list__book">Book →</a>
+        </div>
+        <div class="service-minimal-card">
+          <h3 class="service-minimal-card__title">Eyebrow Shaping</h3>
+          <a href="contact.html#booking" class="service-list__book">Book →</a>
+        </div>
+        <div class="service-minimal-card">
+          <h3 class="service-minimal-card__title">Body Waxing</h3>
+          <a href="contact.html#booking" class="service-list__book">Book →</a>
+        </div>
+        <div class="service-minimal-card">
+          <h3 class="service-minimal-card__title">Brazilian Waxing</h3>
+          <a href="contact.html#booking" class="service-list__book">Book →</a>
+        </div>
+        <div class="service-minimal-card">
+          <h3 class="service-minimal-card__title">Full Body Threading</h3>
+          <a href="contact.html#booking" class="service-list__book">Book →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       SPA & MASSAGE
+  ═══════════════════════════════════════════ -->
+  <section class="service-block service-block--dark" id="spa" aria-labelledby="spa-block-heading">
+    <div class="service-block__bloom" aria-hidden="true"></div>
+    <div class="container">
+      <div class="service-block__inner">
+
+        <div class="service-block__image-wrap" data-animate="slide-left">
+          <img
+            src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=900&q=80"
+            alt="Spa and massage treatments at Ivy's Beauty Secret"
+            class="service-block__image img-dark-bg" width="900" height="1000" loading="lazy">
+        </div>
+
+        <div class="service-block__content" data-animate="slide-right">
+          <div class="ornament-line ornament-line--gold" aria-hidden="true"></div>
+          <p class="section-script section-script--gold">The Retreat</p>
+          <h2 class="section-h2 section-h2--white" id="spa-block-heading">ESCAPE &amp;<br>RESTORE</h2>
+          <p class="section-body" style="margin-top:0; margin-bottom:28px; color:rgba(255,255,255,0.75);">
+            You deserve more than a moment — you deserve a complete experience.
+          </p>
+
+          <ul class="service-list service-list--dark" role="list">
+            <li class="service-list__item"><span class="service-list__name">Body Massage</span><a href="contact.html#booking" class="service-list__book service-list__book--gold">Book →</a></li>
+            <li class="service-list__item"><span class="service-list__name">Manicure Spa</span><a href="contact.html#booking" class="service-list__book service-list__book--gold">Book →</a></li>
+            <li class="service-list__item"><span class="service-list__name">Pedicure Spa</span><a href="contact.html#booking" class="service-list__book service-list__book--gold">Book →</a></li>
+          </ul>
+
+          <a href="https://wa.me/971509921215?text=Hello%20Ivy%27s%20Beauty%20Secret.%20I%20would%20like%20to%20book%20a%20spa%20session."
+             class="btn btn--gold" target="_blank" rel="noopener" style="margin-top:24px;">
+            Book Your Spa Escape ✦
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       BOOKING STRIP
+  ═══════════════════════════════════════════ -->
+  <section class="cta-strip" aria-labelledby="services-cta-heading">
+    <div class="cta-strip__glow" aria-hidden="true"></div>
+    <div class="container cta-strip__inner" data-animate="fade-up">
+      <div class="ornament-duo ornament-duo--white" aria-hidden="true">✦ ——— ✦</div>
+      <h2 class="cta-strip__headline" id="services-cta-heading">FOUND YOUR<br>NEXT APPOINTMENT?</h2>
+      <a href="https://wa.me/971509921215?text=Hello%20Ivy%27s%20Beauty%20Secret.%20I%20would%20like%20to%20arrange%20an%20appointment.%20Please%20let%20me%20know%20your%20availability."
+         class="btn btn--gold" target="_blank" rel="noopener">
+        Reserve Your Moment ✦
+      </a>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__top-border" aria-hidden="true"></div>
+    <div class="footer__glow" aria-hidden="true"></div>
+
+    <div class="container">
+      <div class="footer__grid">
+
+        <div class="footer__brand">
+          <a href="index.html" class="footer__logo-link" aria-label="Ivy's Beauty Secret — Home">
+            <div class="footer__logo-text">
+              <span class="footer__logo-primary">IVY'S BEAUTY</span>
+              <span class="footer__logo-accent">SECRET</span>
+            </div>
+          </a>
+          <p class="footer__tagline">Where Beauty Meets Luxury</p>
+          <p class="footer__location">Abu Dhabi, United Arab Emirates</p>
+          <p class="footer__brand-tagline">"Be a Pampered Princess" ✦</p>
+
+          <div class="footer__socials" role="list" aria-label="Follow Ivy's Beauty Secret on social media">
+            <a href="https://www.instagram.com/ivysbeautysecret/" target="_blank" rel="noopener" class="footer__social" role="listitem" aria-label="Follow Ivy's on Instagram"><i class="ph-thin ph-instagram-logo"></i></a>
+            <a href="https://wa.me/971509921215" target="_blank" rel="noopener" class="footer__social" role="listitem" aria-label="Chat on WhatsApp"><i class="ph-thin ph-whatsapp-logo"></i></a>
+            <a href="#" target="_blank" rel="noopener" class="footer__social" role="listitem" aria-label="Follow on TikTok"><i class="ph-thin ph-tiktok-logo"></i></a>
+            <a href="#" target="_blank" rel="noopener" class="footer__social" role="listitem" aria-label="Follow on Facebook"><i class="ph-thin ph-facebook-logo"></i></a>
+          </div>
+
+          <div class="footer__insta" aria-label="Recent Instagram posts">
+            <a href="https://www.instagram.com/ivysbeautysecret/" target="_blank" rel="noopener" class="footer__insta-item" aria-label="View on Instagram">
+              <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=130&q=70" alt="@ivysbeautysecret on Instagram" width="64" height="64" loading="lazy">
+            </a>
+            <a href="https://www.instagram.com/ivysbeautysecret/" target="_blank" rel="noopener" class="footer__insta-item" aria-label="View on Instagram">
+              <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=130&q=70" alt="@ivysbeautysecret on Instagram" width="64" height="64" loading="lazy">
+            </a>
+            <a href="https://www.instagram.com/ivysbeautysecret/" target="_blank" rel="noopener" class="footer__insta-item" aria-label="View on Instagram">
+              <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=130&q=70" alt="@ivysbeautysecret on Instagram" width="64" height="64" loading="lazy">
+            </a>
+          </div>
+          <p class="footer__insta-handle">@ivysbeautysecret</p>
+        </div>
+
+        <nav class="footer__nav-col" aria-label="Quick links">
+          <h3 class="footer__col-heading">QUICK LINKS</h3>
+          <ul class="footer__links" role="list">
+            <li><a href="index.html" class="footer__link">Home</a></li>
+            <li><a href="about.html" class="footer__link">About</a></li>
+            <li><a href="services.html" class="footer__link">Services</a></li>
+            <li><a href="gallery.html" class="footer__link">Gallery</a></li>
+            <li><a href="pricing.html" class="footer__link">Pricing</a></li>
+            <li><a href="testimonials.html" class="footer__link">Testimonials</a></li>
+            <li><a href="contact.html" class="footer__link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer__nav-col" aria-label="Our services">
+          <h3 class="footer__col-heading">OUR SERVICES</h3>
+          <ul class="footer__links" role="list">
+            <li><a href="services.html#hair" class="footer__link">Hair Services</a></li>
+            <li><a href="services.html#makeup" class="footer__link">Makeup & Glam</a></li>
+            <li><a href="services.html#bridal" class="footer__link">Bridal Beauty</a></li>
+            <li><a href="services.html#skin" class="footer__link">Skin & Facial</a></li>
+            <li><a href="services.html#nails" class="footer__link">Nail Services</a></li>
+            <li><a href="services.html#spa" class="footer__link">Spa & Massage</a></li>
+            <li><a href="services.html#threading" class="footer__link">Threading</a></li>
+            <li><a href="services.html#threading" class="footer__link">Waxing</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer__contact-col">
+          <h3 class="footer__col-heading">CONTACT US</h3>
+          <ul class="footer__contact-list" role="list">
+            <li><i class="ph-thin ph-phone" aria-hidden="true"></i><a href="tel:+971509921215" class="footer__link">+971 50 992 1215</a></li>
+            <li><i class="ph-thin ph-whatsapp-logo" aria-hidden="true"></i><a href="https://wa.me/971509921215" target="_blank" rel="noopener" class="footer__link">WhatsApp</a></li>
+            <li><i class="ph-thin ph-map-pin" aria-hidden="true"></i><address class="footer__address">Mezzanine Floor · Musaffah ME9<br>Abu Dhabi, United Arab Emirates</address></li>
+            <li><i class="ph-thin ph-instagram-logo" aria-hidden="true"></i><a href="https://www.instagram.com/ivysbeautysecret/" target="_blank" rel="noopener" class="footer__link">@ivysbeautysecret</a></li>
+          </ul>
+          <a href="contact.html#booking" class="footer__book-cta">Book an Appointment →</a>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <p class="footer__copy">© 2025 Ivy's Beauty Secret Ladies Salon &amp; Spa · All Rights Reserved</p>
+        <p class="footer__address-short">Musaffah ME9, Abu Dhabi, United Arab Emirates</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ═══════════════════════════════════════════
+       FLOATING PERSISTENT ELEMENTS
+  ═══════════════════════════════════════════ -->
+  <a href="https://wa.me/971509921215?text=Hello%20Ivy%27s%20Beauty%20Secret.%20I%20would%20like%20to%20arrange%20an%20appointment.%20Please%20let%20me%20know%20your%20availability."
+     class="whatsapp-widget" target="_blank" rel="noopener" id="whatsappWidget" aria-label="Chat with us on WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+    <span class="whatsapp-widget__tooltip" role="tooltip">Chat with us</span>
+  </a>
+
+  <div class="mobile-booking-bar" id="mobileBookingBar" aria-label="Quick booking options" hidden>
+    <a href="tel:+971509921215" class="mobile-booking-bar__btn" aria-label="Call Ivy's Beauty Secret">
+      <i class="ph-thin ph-phone" aria-hidden="true"></i> Call Now
+    </a>
+    <a href="contact.html#booking" class="mobile-booking-bar__btn mobile-booking-bar__btn--primary" aria-label="Book your appointment">
+      Reserve Your Moment →
+    </a>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,1179 @@
+<!DOCTYPE html>
+<html lang="en" color-scheme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ivy's Beauty Secret | Ladies Salon & Spa — Abu Dhabi</title>
+  <meta name="description" content="Abu Dhabi's premier ladies salon and spa. Luxury beauty services exclusively for women in Musaffah ME9. Hair, makeup, bridal, skin, nails and spa.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Ivy's Beauty Secret | Ladies Salon & Spa Abu Dhabi">
+  <meta property="og:description" content="Abu Dhabi's premier ladies salon and spa. Luxury beauty services exclusively for women.">
+  <meta property="og:type" content="website">
+
+  <!-- Preconnect for fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Fonts: Cormorant Garamond (display) + Poppins (body) -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;0,700;1,300;1,400&family=Poppins:wght@300;400;500;600&display=optional" rel="stylesheet">
+
+  <!-- Phosphor Icons (thin weight) -->
+  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1/src/index.js" defer></script>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       NAVIGATION
+  ═══════════════════════════════════════════ -->
+  <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+
+      <!-- Logo -->
+      <a href="index.html" class="nav__logo" aria-label="Ivy's Beauty Secret — Home">
+        <img src="https://i.imgur.com/placeholder-logo.png"
+             alt="Ivy's Beauty Secret Ladies Salon & Spa"
+             class="nav__logo-img"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+        <!-- Fallback text logo if image fails -->
+        <div class="nav__logo-text" style="display:none">
+          <span class="nav__logo-primary">IVY'S BEAUTY</span>
+          <span class="nav__logo-secondary">SECRET</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <ul class="nav__links" role="list">
+        <li><a href="index.html" class="nav__link nav__link--active">Home</a></li>
+        <li><a href="about.html" class="nav__link">About</a></li>
+        <li><a href="services.html" class="nav__link">Services</a></li>
+        <li><a href="gallery.html" class="nav__link">Gallery</a></li>
+        <li><a href="pricing.html" class="nav__link">Pricing</a></li>
+        <li><a href="testimonials.html" class="nav__link">Testimonials</a></li>
+        <li><a href="contact.html" class="nav__link">Contact</a></li>
+      </ul>
+
+      <!-- Desktop CTA -->
+      <a href="#booking" class="nav__cta btn btn--pink">Reserve Your Experience</a>
+
+      <!-- Mobile Hamburger -->
+      <button class="nav__hamburger" id="navToggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileNav">
+        <span class="nav__hamburger-bar"></span>
+        <span class="nav__hamburger-bar"></span>
+        <span class="nav__hamburger-bar"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav Overlay -->
+  <div class="mobile-nav" id="mobileNav" role="dialog" aria-modal="true" aria-label="Navigation menu">
+    <div class="mobile-nav__inner">
+      <button class="mobile-nav__close" id="navClose" aria-label="Close navigation menu">
+        <i class="ph-thin ph-x"></i>
+      </button>
+      <nav class="mobile-nav__links" aria-label="Mobile navigation">
+        <a href="index.html" class="mobile-nav__link mobile-nav__link--active">Home</a>
+        <a href="about.html" class="mobile-nav__link">About</a>
+        <a href="services.html" class="mobile-nav__link">Services</a>
+        <a href="gallery.html" class="mobile-nav__link">Gallery</a>
+        <a href="pricing.html" class="mobile-nav__link">Pricing</a>
+        <a href="testimonials.html" class="mobile-nav__link">Testimonials</a>
+        <a href="contact.html" class="mobile-nav__link">Contact</a>
+      </nav>
+      <div class="mobile-nav__footer">
+        <p class="mobile-nav__contact">+971 50 992 1215</p>
+        <p class="mobile-nav__contact">@ivysbeautysecret</p>
+        <div class="mobile-nav__socials">
+          <a href="https://www.instagram.com/ivysbeautysecret/" target="_blank" rel="noopener" aria-label="Follow Ivy's on Instagram" class="mobile-nav__social-icon">
+            <i class="ph-thin ph-instagram-logo"></i>
+          </a>
+          <a href="https://wa.me/971509921215" target="_blank" rel="noopener" aria-label="Chat on WhatsApp" class="mobile-nav__social-icon">
+            <i class="ph-thin ph-whatsapp-logo"></i>
+          </a>
+          <a href="#" target="_blank" rel="noopener" aria-label="Follow on TikTok" class="mobile-nav__social-icon">
+            <i class="ph-thin ph-tiktok-logo"></i>
+          </a>
+          <a href="#" target="_blank" rel="noopener" aria-label="Follow on Facebook" class="mobile-nav__social-icon">
+            <i class="ph-thin ph-facebook-logo"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 1 — CINEMATIC HERO
+  ═══════════════════════════════════════════ -->
+  <section class="hero" id="home" aria-label="Welcome to Ivy's Beauty Secret">
+
+    <!-- Atmospheric Light Blooms -->
+    <div class="hero__bloom hero__bloom--pink" aria-hidden="true"></div>
+    <div class="hero__bloom hero__bloom--blue" aria-hidden="true"></div>
+
+    <!-- Floating Particles -->
+    <div class="hero__particles" aria-hidden="true" id="heroParticles"></div>
+
+    <!-- Hero Layout -->
+    <div class="hero__inner">
+
+      <!-- Left — Text Content -->
+      <div class="hero__content" data-animate="fade-up">
+
+        <!-- Gold ornament line -->
+        <div class="ornament-line" aria-hidden="true"></div>
+
+        <!-- Script label -->
+        <p class="hero__script">Abu Dhabi's Premier Ladies Salon &amp; Spa</p>
+
+        <!-- Main H1 -->
+        <h1 class="hero__headline">
+          WHERE EVERY<br>
+          WOMAN BECOMES<br>
+          A QUEEN.
+        </h1>
+
+        <!-- Body text -->
+        <p class="hero__body">
+          Luxury beauty and spa services crafted<br>
+          exclusively for the women of Abu Dhabi.
+        </p>
+
+        <!-- Embedded Trust Indicators -->
+        <div class="hero__trust" role="list" aria-label="Our commitments">
+          <div class="hero__trust-item" role="listitem">
+            <i class="ph-thin ph-certificate" aria-hidden="true"></i>
+            <span>Certified Beauticians</span>
+          </div>
+          <div class="hero__trust-item" role="listitem">
+            <i class="ph-thin ph-sparkle" aria-hidden="true"></i>
+            <span>Premium Products</span>
+          </div>
+          <div class="hero__trust-item" role="listitem">
+            <i class="ph-thin ph-shield-check" aria-hidden="true"></i>
+            <span>Hygienic Environment</span>
+          </div>
+        </div>
+
+        <!-- CTA Row -->
+        <div class="hero__ctas">
+          <a href="#booking" class="btn btn--pink">Reserve Your Moment →</a>
+          <a href="services.html" class="hero__cta-link">
+            Explore Services <span class="hero__cta-arrow">→</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right — Model Photography -->
+      <div class="hero__image-zone" aria-hidden="true">
+        <img
+          src="https://images.unsplash.com/photo-1560869713-7d0a29430803?w=900&q=80"
+          alt="Luxury beauty treatment at Ivy's Beauty Secret Abu Dhabi"
+          class="hero__model img-hero"
+          width="900"
+          height="1200"
+          fetchpriority="high">
+
+        <!-- Glassmorphism Card 1 — Rating -->
+        <div class="glass-card glass-card--1" aria-label="Client rating: 4.9 stars, 500 plus happy clients">
+          <div class="glass-card__content">
+            <span class="glass-card__icon">⭐</span>
+            <div>
+              <p class="glass-card__title">4.9 Rating</p>
+              <p class="glass-card__sub">500+ Happy Clients</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Glassmorphism Card 2 — Reputation -->
+        <div class="glass-card glass-card--2" aria-label="Top rated salon in Abu Dhabi">
+          <div class="glass-card__content">
+            <span class="glass-card__icon">🏆</span>
+            <div>
+              <p class="glass-card__title">Top-Rated in Abu Dhabi</p>
+              <p class="glass-card__sub">Google Verified Reviews</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /.hero__inner -->
+
+    <!-- Section exit fade -->
+    <div class="hero__exit" aria-hidden="true"></div>
+
+  </section><!-- /.hero -->
+
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 2 — FEATURED SERVICE CATEGORIES
+  ═══════════════════════════════════════════ -->
+  <section class="services" id="services" aria-labelledby="services-heading">
+    <div class="section-entry" aria-hidden="true"></div>
+
+    <div class="container">
+
+      <!-- Section Headline -->
+      <div class="section-header section-header--center" data-animate="fade-up">
+        <div class="ornament-line ornament-line--center" aria-hidden="true"></div>
+        <p class="section-script">Indulge in Every Detail</p>
+        <h2 class="section-h2" id="services-heading">
+          SERVICES MADE<br>FOR QUEENS
+        </h2>
+        <p class="section-body">Every treatment designed with precision, care, and luxury.</p>
+      </div>
+
+      <!-- Service Cards Grid -->
+      <div class="services__grid" data-animate="fade-up">
+
+        <!-- Featured Card — Hair Artistry -->
+        <article class="service-card service-card--featured" aria-label="Hair Artistry services">
+          <div class="service-card__image-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=800&q=80"
+              alt="Professional hair styling and colour services"
+              class="service-card__image img-card"
+              width="800"
+              height="490"
+              loading="lazy">
+            <div class="service-card__img-overlay" aria-hidden="true"></div>
+          </div>
+          <div class="service-card__badge" aria-hidden="true">
+            <i class="ph-thin ph-scissors"></i>
+          </div>
+          <div class="service-card__body">
+            <h3 class="service-card__title">Hair Artistry</h3>
+            <p class="service-card__desc">From precision cuts to transformative colour — every strand, perfected.</p>
+            <a href="services.html#hair" class="service-card__cta">
+              <span class="service-card__cta-default">Explore →</span>
+              <span class="service-card__cta-hover">Reserve Your Moment ✦</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Standard Card — Makeup Atelier -->
+        <article class="service-card" aria-label="Makeup Atelier services">
+          <div class="service-card__image-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=600&q=80"
+              alt="Professional makeup and glamour services"
+              class="service-card__image img-card"
+              width="600"
+              height="348"
+              loading="lazy">
+            <div class="service-card__img-overlay" aria-hidden="true"></div>
+          </div>
+          <div class="service-card__badge" aria-hidden="true">
+            <i class="ph-thin ph-paint-brush"></i>
+          </div>
+          <div class="service-card__body">
+            <h3 class="service-card__title">Makeup Atelier</h3>
+            <p class="service-card__desc">Glamour, crafted for you.</p>
+            <a href="services.html#makeup" class="service-card__cta">
+              <span class="service-card__cta-default">Explore →</span>
+              <span class="service-card__cta-hover">Reserve Your Moment ✦</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Standard Card — Bridal Suite -->
+        <article class="service-card" aria-label="Bridal Suite services">
+          <div class="service-card__image-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=600&q=80"
+              alt="Bridal makeup and hair styling services"
+              class="service-card__image img-card"
+              width="600"
+              height="348"
+              loading="lazy">
+            <div class="service-card__img-overlay" aria-hidden="true"></div>
+          </div>
+          <div class="service-card__badge" aria-hidden="true">
+            <i class="ph-thin ph-flower"></i>
+          </div>
+          <div class="service-card__body">
+            <h3 class="service-card__title">Bridal Suite</h3>
+            <p class="service-card__desc">Your day, beautifully remembered.</p>
+            <a href="services.html#bridal" class="service-card__cta">
+              <span class="service-card__cta-default">Explore →</span>
+              <span class="service-card__cta-hover">Reserve Your Moment ✦</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Standard Card — Skin Sanctuary -->
+        <article class="service-card service-card--wide" aria-label="Skin Sanctuary services">
+          <div class="service-card__image-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=800&q=80"
+              alt="Facial and skin care treatments"
+              class="service-card__image img-card"
+              width="800"
+              height="348"
+              loading="lazy">
+            <div class="service-card__img-overlay" aria-hidden="true"></div>
+          </div>
+          <div class="service-card__badge" aria-hidden="true">
+            <i class="ph-thin ph-drop"></i>
+          </div>
+          <div class="service-card__body">
+            <h3 class="service-card__title">Skin Sanctuary</h3>
+            <p class="service-card__desc">Luminous skin, revealed.</p>
+            <a href="services.html#skin" class="service-card__cta">
+              <span class="service-card__cta-default">Explore →</span>
+              <span class="service-card__cta-hover">Reserve Your Moment ✦</span>
+            </a>
+          </div>
+        </article>
+
+      </div><!-- /.services__grid -->
+    </div><!-- /.container -->
+
+    <div class="section-exit section-exit--to-white" aria-hidden="true"></div>
+  </section><!-- /.services -->
+
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 3 — TRANSFORMATIONS GALLERY
+  ═══════════════════════════════════════════ -->
+  <section class="gallery" id="gallery" aria-labelledby="gallery-heading">
+
+    <div class="container">
+
+      <!-- Section Headline -->
+      <div class="section-header section-header--center" data-animate="fade-up">
+        <p class="section-script">Our Work Speaks</p>
+        <h2 class="section-h2" id="gallery-heading">
+          TRANSFORMATIONS<br>THAT SPEAK
+        </h2>
+        <p class="section-body">Every image tells a story of transformation.</p>
+      </div>
+
+      <!-- Masonry Grid — 6 images -->
+      <div class="gallery__grid" data-animate="fade-up" role="list" aria-label="Gallery of beauty transformations">
+
+        <div class="gallery__item gallery__item--a" role="listitem">
+          <img
+            src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?w=700&q=80"
+            alt="Hair transformation — styled result at Ivy's Beauty Secret"
+            class="gallery__img img-gallery"
+            width="700"
+            height="900"
+            loading="lazy">
+        </div>
+
+        <div class="gallery__item gallery__item--b" role="listitem">
+          <img
+            src="https://images.unsplash.com/photo-1492106087820-71f1a00d2b11?w=600&q=80"
+            alt="Professional makeup — bold and beautiful"
+            class="gallery__img img-gallery"
+            width="600"
+            height="700"
+            loading="lazy">
+        </div>
+
+        <div class="gallery__item gallery__item--c" role="listitem">
+          <img
+            src="https://images.unsplash.com/photo-1537832816519-689ad163238b?w=600&q=80"
+            alt="Bridal beauty — elegant and radiant"
+            class="gallery__img img-gallery"
+            width="600"
+            height="950"
+            loading="lazy">
+        </div>
+
+        <div class="gallery__item gallery__item--d" role="listitem">
+          <img
+            src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=600&q=80"
+            alt="Nail art and manicure services"
+            class="gallery__img img-gallery"
+            width="600"
+            height="600"
+            loading="lazy">
+        </div>
+
+        <div class="gallery__item gallery__item--e" role="listitem">
+          <img
+            src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=600&q=80"
+            alt="Skin treatment — glowing complexion result"
+            class="gallery__img img-gallery"
+            width="600"
+            height="800"
+            loading="lazy">
+        </div>
+
+        <div class="gallery__item gallery__item--f" role="listitem">
+          <img
+            src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=600&q=80"
+            alt="Luxury salon interior at Ivy's Beauty Secret"
+            class="gallery__img img-gallery"
+            width="600"
+            height="580"
+            loading="lazy">
+        </div>
+
+      </div><!-- /.gallery__grid -->
+
+      <!-- CTA -->
+      <div class="gallery__cta-wrap" data-animate="fade-up">
+        <a href="gallery.html" class="btn btn--outline">View Full Gallery</a>
+      </div>
+
+    </div><!-- /.container -->
+
+    <div class="section-exit section-exit--to-blush" aria-hidden="true"></div>
+  </section><!-- /.gallery -->
+
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 4 — TESTIMONIALS
+  ═══════════════════════════════════════════ -->
+  <section class="testimonials" id="testimonials" aria-labelledby="testimonials-heading">
+
+    <div class="container">
+
+      <!-- Section Headline -->
+      <div class="section-header section-header--center" data-animate="fade-up">
+        <p class="section-script">Client Love</p>
+        <h2 class="section-h2" id="testimonials-heading">
+          IN THEIR<br>OWN WORDS
+        </h2>
+      </div>
+
+      <!-- Carousel -->
+      <div class="testimonials__carousel-wrap" data-animate="fade-up">
+        <div class="testimonials__carousel" id="testimonialsCarousel" aria-live="polite">
+
+          <!-- Card 1 -->
+          <article class="testimonial-card" aria-label="Review from Chioma A.">
+            <div class="testimonial-card__quote" aria-hidden="true">"</div>
+            <blockquote class="testimonial-card__text">
+              The best salon experience I have ever had in Abu Dhabi. The team is incredibly skilled and the environment is so relaxing and beautiful.
+            </blockquote>
+            <div class="testimonial-card__divider" aria-hidden="true"></div>
+            <cite class="testimonial-card__author">— Chioma A.</cite>
+            <p class="testimonial-card__service">Hair Styling & Colour</p>
+            <div class="testimonial-card__stars" aria-label="5 out of 5 stars" role="img">
+              <span aria-hidden="true">★★★★★</span>
+            </div>
+            <div class="testimonial-card__source">
+              <span class="testimonial-card__source-text">Verified Google Review</span>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="testimonial-card" aria-label="Review from Jennifer O.">
+            <div class="testimonial-card__quote" aria-hidden="true">"</div>
+            <blockquote class="testimonial-card__text">
+              My go-to place for everything beauty. They make you feel so special every single time. Ivy's is truly one of a kind in Abu Dhabi.
+            </blockquote>
+            <div class="testimonial-card__divider" aria-hidden="true"></div>
+            <cite class="testimonial-card__author">— Jennifer O.</cite>
+            <p class="testimonial-card__service">Makeup & Bridal</p>
+            <div class="testimonial-card__stars" aria-label="5 out of 5 stars" role="img">
+              <span aria-hidden="true">★★★★★</span>
+            </div>
+            <div class="testimonial-card__source">
+              <span class="testimonial-card__source-text">Verified Google Review</span>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="testimonial-card" aria-label="Review from Bukky T.">
+            <div class="testimonial-card__quote" aria-hidden="true">"</div>
+            <blockquote class="testimonial-card__text">
+              Clean environment, friendly and professional staff, and simply amazing results. I highly recommend Ivy's Beauty Secret to every woman in Abu Dhabi.
+            </blockquote>
+            <div class="testimonial-card__divider" aria-hidden="true"></div>
+            <cite class="testimonial-card__author">— Bukky T.</cite>
+            <p class="testimonial-card__service">Skin Sanctuary</p>
+            <div class="testimonial-card__stars" aria-label="5 out of 5 stars" role="img">
+              <span aria-hidden="true">★★★★★</span>
+            </div>
+            <div class="testimonial-card__source">
+              <span class="testimonial-card__source-text">Verified Google Review</span>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="testimonial-card" aria-label="Review from Amina R.">
+            <div class="testimonial-card__quote" aria-hidden="true">"</div>
+            <blockquote class="testimonial-card__text">
+              I came in for a bridal trial and left feeling like an absolute queen. The attention to detail is extraordinary. I wouldn't trust anyone else with my wedding day look.
+            </blockquote>
+            <div class="testimonial-card__divider" aria-hidden="true"></div>
+            <cite class="testimonial-card__author">— Amina R.</cite>
+            <p class="testimonial-card__service">Bridal Suite</p>
+            <div class="testimonial-card__stars" aria-label="5 out of 5 stars" role="img">
+              <span aria-hidden="true">★★★★★</span>
+            </div>
+            <div class="testimonial-card__source">
+              <span class="testimonial-card__source-text">Verified Google Review</span>
+            </div>
+          </article>
+
+          <!-- Card 5 -->
+          <article class="testimonial-card" aria-label="Review from Fatima M.">
+            <div class="testimonial-card__quote" aria-hidden="true">"</div>
+            <blockquote class="testimonial-card__text">
+              The HydraFacial treatment completely transformed my skin. I walked out glowing. This is the kind of luxury experience I had been looking for in Abu Dhabi.
+            </blockquote>
+            <div class="testimonial-card__divider" aria-hidden="true"></div>
+            <cite class="testimonial-card__author">— Fatima M.</cite>
+            <p class="testimonial-card__service">Skin Sanctuary — HydraFacial</p>
+            <div class="testimonial-card__stars" aria-label="5 out of 5 stars" role="img">
+              <span aria-hidden="true">★★★★★</span>
+            </div>
+            <div class="testimonial-card__source">
+              <span class="testimonial-card__source-text">Verified Google Review</span>
+            </div>
+          </article>
+
+        </div><!-- /.testimonials__carousel -->
+
+        <!-- Edge fades -->
+        <div class="testimonials__fade testimonials__fade--left" aria-hidden="true"></div>
+        <div class="testimonials__fade testimonials__fade--right" aria-hidden="true"></div>
+      </div>
+
+      <!-- Navigation -->
+      <div class="testimonials__nav" role="group" aria-label="Testimonial navigation">
+        <button class="testimonials__arrow testimonials__arrow--prev" id="testimPrev" aria-label="Previous review">
+          <i class="ph-thin ph-arrow-left"></i>
+        </button>
+        <div class="testimonials__dots" id="testimDots" role="tablist" aria-label="Review pages"></div>
+        <button class="testimonials__arrow testimonials__arrow--next" id="testimNext" aria-label="Next review">
+          <i class="ph-thin ph-arrow-right"></i>
+        </button>
+      </div>
+
+    </div><!-- /.container -->
+
+    <div class="section-exit section-exit--to-dark" aria-hidden="true"></div>
+  </section><!-- /.testimonials -->
+
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 5 — HAIR TRANSFORMATIONS
+  ═══════════════════════════════════════════ -->
+  <section class="hair" id="hair-transformations" aria-labelledby="hair-heading">
+
+    <!-- Dark atmosphere bloom -->
+    <div class="hair__bloom" aria-hidden="true"></div>
+
+    <!-- Particles -->
+    <div class="hair__particles" aria-hidden="true" id="hairParticles"></div>
+
+    <div class="container">
+
+      <!-- Headline -->
+      <div class="section-header section-header--center section-header--light" data-animate="fade-up">
+        <div class="ornament-line ornament-line--center ornament-line--gold" aria-hidden="true"></div>
+        <p class="section-script section-script--gold">Hair Magic at Ivy's</p>
+        <h2 class="section-h2 section-h2--white" id="hair-heading">
+          FROM ROOTS<br>TO RADIANCE
+        </h2>
+      </div>
+
+      <!-- Before/After Slider -->
+      <div class="slider-wrap" data-animate="fade-up">
+
+        <!-- Primary Slider -->
+        <div class="slider" id="mainSlider" aria-label="Hair transformation before and after comparison">
+          <div class="slider__before">
+            <img
+              src="https://images.unsplash.com/photo-1590577976322-3d2d6a2130f4?w=900&q=80"
+              alt="Before hair treatment"
+              class="slider__img slider__img--before"
+              width="900"
+              height="500"
+              loading="lazy">
+            <span class="slider__badge slider__badge--before">BEFORE</span>
+          </div>
+          <div class="slider__after" id="sliderAfter">
+            <img
+              src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=900&q=80"
+              alt="After hair treatment — stunning balayage transformation"
+              class="slider__img slider__img--after"
+              width="900"
+              height="500"
+              loading="lazy">
+            <span class="slider__badge slider__badge--after">AFTER</span>
+          </div>
+          <!-- Divider + Handle -->
+          <div class="slider__divider" id="sliderDivider" aria-hidden="true">
+            <div class="slider__handle" id="sliderHandle" aria-label="Drag to compare before and after">
+              <span class="slider__handle-arrows">◄ ►</span>
+            </div>
+          </div>
+        </div><!-- /.slider -->
+
+        <!-- Thumbnail Selectors -->
+        <div class="slider__thumbs" role="group" aria-label="Select transformation to view">
+          <button class="slider__thumb slider__thumb--active" data-pair="0" aria-pressed="true" aria-label="View Balayage transformation">
+            <img
+              src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=240&q=70"
+              alt="Balayage transformation"
+              width="120"
+              height="72"
+              loading="lazy">
+            <span>Balayage</span>
+          </button>
+          <button class="slider__thumb" data-pair="1" aria-pressed="false" aria-label="View Keratin transformation">
+            <img
+              src="https://images.unsplash.com/photo-1605980776566-0486c3ac7617?w=240&q=70"
+              alt="Keratin treatment transformation"
+              width="120"
+              height="72"
+              loading="lazy">
+            <span>Keratin</span>
+          </button>
+          <button class="slider__thumb" data-pair="2" aria-pressed="false" aria-label="View Colour transformation">
+            <img
+              src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=240&q=70"
+              alt="Hair colour transformation"
+              width="120"
+              height="72"
+              loading="lazy">
+            <span>Colour</span>
+          </button>
+        </div><!-- /.slider__thumbs -->
+
+      </div><!-- /.slider-wrap -->
+
+      <!-- Tag Pills -->
+      <div class="hair__tags" aria-label="Available hair services" data-animate="fade-up">
+        <a href="services.html#hair" class="hair__tag">Balayage</a>
+        <a href="services.html#hair" class="hair__tag">Ombré</a>
+        <a href="services.html#hair" class="hair__tag">Highlights</a>
+        <a href="services.html#hair" class="hair__tag">Keratin Treatment</a>
+        <a href="services.html#hair" class="hair__tag">Hair Extensions</a>
+        <a href="services.html#hair" class="hair__tag">Lowlights</a>
+        <a href="services.html#hair" class="hair__tag">Hair Colour</a>
+      </div>
+
+    </div><!-- /.container -->
+
+    <div class="section-exit section-exit--dark-to-warm" aria-hidden="true"></div>
+  </section><!-- /.hair -->
+
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 6 — BRIDAL BEAUTY EXPERIENCE
+  ═══════════════════════════════════════════ -->
+  <section class="bridal" id="bridal" aria-labelledby="bridal-heading">
+
+    <!-- Background Image -->
+    <img
+      src="https://images.unsplash.com/photo-1519741497674-611481863552?w=1920&q=80"
+      alt="Bridal beauty experience at Ivy's Beauty Secret"
+      class="bridal__bg img-bridal"
+      width="1920"
+      height="1280"
+      loading="lazy"
+      aria-hidden="true">
+
+    <!-- Overlay Layers -->
+    <div class="bridal__overlay bridal__overlay--main" aria-hidden="true"></div>
+    <div class="bridal__overlay bridal__overlay--left" aria-hidden="true"></div>
+    <div class="bridal__overlay bridal__overlay--right" aria-hidden="true"></div>
+
+    <!-- Gold Particles -->
+    <div class="bridal__particles" aria-hidden="true" id="bridalParticles"></div>
+
+    <!-- Content -->
+    <div class="bridal__content" data-animate="fade-up">
+
+      <!-- Gold ornament -->
+      <div class="ornament-duo" aria-hidden="true">✦ ——— ✦</div>
+
+      <p class="section-script section-script--gold">Your Perfect Day</p>
+
+      <h2 class="bridal__headline" id="bridal-heading">
+        FOR YOUR MOST<br>BEAUTIFUL DAY
+      </h2>
+
+      <p class="bridal__body">
+        From your first bridal trial to your wedding morning —<br>
+        every detail, beautifully considered.
+      </p>
+
+      <!-- Feature Pills -->
+      <div class="bridal__pills" role="list" aria-label="Bridal services available">
+        <span class="bridal__pill" role="listitem">✦ Bridal Makeup</span>
+        <span class="bridal__pill" role="listitem">✦ Hair &amp; Styling</span>
+        <span class="bridal__pill" role="listitem">✦ Full Bridal Package</span>
+      </div>
+
+      <!-- CTA -->
+      <a href="https://wa.me/971509921215?text=Hello%20Ivy%27s%20Beauty%20Secret.%20I%20would%20like%20to%20arrange%20a%20bridal%20consultation."
+         class="btn btn--gold"
+         target="_blank"
+         rel="noopener"
+         aria-label="Arrange your bridal consultation on WhatsApp">
+        Arrange Your Bridal Consultation ✦
+      </a>
+
+    </div><!-- /.bridal__content -->
+
+    <div class="section-exit section-exit--dark-to-lavender" aria-hidden="true"></div>
+  </section><!-- /.bridal -->
+
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 7 — BRAND STORY
+  ═══════════════════════════════════════════ -->
+  <section class="story" id="about-us" aria-labelledby="story-heading">
+
+    <div class="container">
+      <div class="story__inner">
+
+        <!-- Left — Salon Image -->
+        <div class="story__image-wrap" data-animate="slide-left">
+          <img
+            src="https://images.unsplash.com/photo-1633681926022-84c23e8cb2d6?w=1000&q=80"
+            alt="Luxury salon interior at Ivy's Beauty Secret Abu Dhabi"
+            class="story__image img-hero"
+            width="1000"
+            height="750"
+            loading="lazy">
+
+          <!-- Floating Stat Card -->
+          <div class="story__stat-card" aria-label="Trusted by 500 plus women in Abu Dhabi">
+            <p class="story__stat-number">500+</p>
+            <p class="story__stat-label">Women trust Ivy's</p>
+            <p class="story__stat-label">in Abu Dhabi</p>
+          </div>
+        </div>
+
+        <!-- Right — Text Content -->
+        <div class="story__content" data-animate="slide-right">
+
+          <div class="ornament-line" aria-hidden="true"></div>
+          <p class="section-script">A Salon Unlike Any Other</p>
+          <h2 class="section-h2" id="story-heading">
+            THE IVY'S<br>EXPERIENCE
+          </h2>
+
+          <p class="story__body">
+            At Ivy's Beauty Secret, we believe every woman deserves to feel extraordinary.
+            Our certified team, luxury products, and welcoming environment create an
+            experience you will return to again and again.
+          </p>
+
+          <p class="story__founder">
+            Founded with one belief — that every woman deserves to feel extraordinary.
+          </p>
+
+          <!-- Feature Callouts -->
+          <div class="story__callouts">
+
+            <div class="story__callout">
+              <h3 class="story__callout-title">Expert Hands</h3>
+              <p class="story__callout-body">Our certified beauticians bring international training and genuine passion to every appointment.</p>
+            </div>
+
+            <div class="story__rule" aria-hidden="true"></div>
+
+            <div class="story__callout">
+              <h3 class="story__callout-title">Luxury Without Compromise</h3>
+              <p class="story__callout-body">We use only premium international beauty brands — because your skin deserves nothing less.</p>
+            </div>
+
+            <div class="story__rule" aria-hidden="true"></div>
+
+            <div class="story__callout">
+              <h3 class="story__callout-title">Your Space to Feel Beautiful</h3>
+              <p class="story__callout-body">A calm, hygienic, and welcoming environment where every visit feels like a retreat from the world.</p>
+            </div>
+
+          </div><!-- /.story__callouts -->
+
+          <!-- Brand Tagline -->
+          <p class="story__tagline">"Be a Pampered Princess" ✦</p>
+
+          <!-- CTAs -->
+          <div class="story__ctas">
+            <a href="about.html" class="story__link">
+              Discover Our Story <span class="story__link-arrow">→</span>
+            </a>
+            <a href="services.html#spa" class="story__link-subtle">
+              Also offering spa &amp; massage services →
+            </a>
+          </div>
+
+        </div><!-- /.story__content -->
+      </div><!-- /.story__inner -->
+    </div><!-- /.container -->
+
+    <div class="section-exit section-exit--lavender-to-booking" aria-hidden="true"></div>
+  </section><!-- /.story -->
+
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 8 — BOOKING CTA
+  ═══════════════════════════════════════════ -->
+  <section class="booking" id="booking" aria-labelledby="booking-heading">
+
+    <!-- White center glow -->
+    <div class="booking__glow" aria-hidden="true"></div>
+
+    <!-- Particles -->
+    <div class="booking__particles" aria-hidden="true" id="bookingParticles"></div>
+
+    <!-- Model Image (desktop) -->
+    <div class="booking__model-wrap" aria-hidden="true">
+      <img
+        src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=800&q=80"
+        alt=""
+        class="booking__model"
+        width="800"
+        height="1000"
+        loading="lazy">
+    </div>
+
+    <!-- Content -->
+    <div class="booking__content" data-animate="fade-up">
+
+      <!-- Chess Queen Icon -->
+      <div class="booking__queen" aria-hidden="true">♛</div>
+
+      <!-- Ornament -->
+      <div class="ornament-duo ornament-duo--white" aria-hidden="true">✦ ——— ✦</div>
+
+      <p class="section-script section-script--white">Your moment is waiting</p>
+
+      <h2 class="booking__headline" id="booking-heading">
+        IT BEGINS WITH<br>ONE APPOINTMENT
+      </h2>
+
+      <p class="booking__body">
+        Step into Ivy's Beauty Secret and experience what true luxury beauty feels like.
+        Abu Dhabi's most refined ladies salon is ready to welcome you.
+      </p>
+
+      <p class="booking__scarcity">Appointments fill quickly — especially weekend slots.</p>
+
+      <!-- Booking Module -->
+      <div class="booking__module" id="bookingModule">
+
+        <!-- WhatsApp Mode (default — active) -->
+        <div class="booking__whatsapp" id="bookingWhatsapp">
+          <div class="booking__wa-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="34" height="34" aria-hidden="true">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+          </div>
+          <h3 class="booking__wa-title">Book on WhatsApp</h3>
+          <p class="booking__wa-sub">Available 7 days a week</p>
+          <p class="booking__wa-phone">+971 50 992 1215</p>
+          <a href="https://wa.me/971509921215?text=Hello%20Ivy%27s%20Beauty%20Secret.%20I%20would%20like%20to%20arrange%20an%20appointment.%20Please%20let%20me%20know%20your%20availability."
+             class="btn btn--gold btn--full"
+             target="_blank"
+             rel="noopener"
+             aria-label="Book your appointment on WhatsApp">
+            Book on WhatsApp ✦
+          </a>
+        </div><!-- /.booking__whatsapp -->
+
+        <!-- Formspree Form Mode (hidden by default — activated via BOOKING config in JS) -->
+        <form class="booking__form" id="bookingForm" style="display:none"
+              action="https://formspree.io/f/YOUR_FORM_ID"
+              method="POST"
+              aria-label="Appointment request form"
+              novalidate>
+          <input type="hidden" name="_subject" value="New Appointment Request — Ivy's Beauty Secret">
+
+          <div class="form-group">
+            <label for="formName" class="form-label">Name</label>
+            <input type="text" id="formName" name="name" class="form-input"
+                   placeholder="How shall we address you?" required autocomplete="name">
+          </div>
+
+          <div class="form-group">
+            <label for="formPhone" class="form-label">Phone</label>
+            <input type="tel" id="formPhone" name="phone" class="form-input"
+                   placeholder="Your contact number" required autocomplete="tel">
+          </div>
+
+          <div class="form-group">
+            <label for="formService" class="form-label">Service</label>
+            <select id="formService" name="service" class="form-input form-select" required>
+              <option value="" disabled selected>Which experience calls to you?</option>
+              <optgroup label="Hair Services">
+                <option>Hair Styling</option>
+                <option>Balayage</option>
+                <option>Hair Colour</option>
+                <option>Keratin Treatment</option>
+                <option>Hair Extensions</option>
+                <option>Blowout</option>
+                <option>Haircut & Trim</option>
+              </optgroup>
+              <optgroup label="Makeup">
+                <option>Party Makeup</option>
+                <option>Bridal Makeup</option>
+                <option>Everyday Makeup</option>
+              </optgroup>
+              <optgroup label="Bridal">
+                <option>Full Bridal Package</option>
+                <option>Bridal Trial</option>
+              </optgroup>
+              <optgroup label="Skin & Facial">
+                <option>HydraFacial</option>
+                <option>Organic Facial</option>
+                <option>Acne Treatment</option>
+                <option>Botox Treatment</option>
+                <option>Collagen Treatment</option>
+                <option>Bleaching</option>
+              </optgroup>
+              <optgroup label="Nails">
+                <option>Manicure</option>
+                <option>Pedicure</option>
+                <option>Gel Polish</option>
+                <option>Nail Extensions</option>
+              </optgroup>
+              <optgroup label="Waxing & Threading">
+                <option>Body Waxing</option>
+                <option>Eyebrow Threading</option>
+                <option>Eyebrow Shaping</option>
+              </optgroup>
+              <optgroup label="Spa">
+                <option>Body Massage</option>
+                <option>Manicure Spa</option>
+                <option>Pedicure Spa</option>
+              </optgroup>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="formMessage" class="form-label">Message <span class="form-optional">(optional)</span></label>
+            <textarea id="formMessage" name="message" class="form-input form-textarea" rows="3"
+                      placeholder="Tell us about your vision"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn--gold btn--full">
+            Send My Enquiry →
+          </button>
+        </form><!-- /.booking__form -->
+
+      </div><!-- /.booking__module -->
+
+      <!-- What Happens Next -->
+      <div class="booking__steps" aria-label="What happens after you book">
+        <div class="booking__step">
+          <span class="booking__step-num">1</span>
+          <span class="booking__step-text">We receive your request</span>
+        </div>
+        <span class="booking__step-sep" aria-hidden="true">·</span>
+        <div class="booking__step">
+          <span class="booking__step-num">2</span>
+          <span class="booking__step-text">We confirm your appointment</span>
+        </div>
+        <span class="booking__step-sep" aria-hidden="true">·</span>
+        <div class="booking__step">
+          <span class="booking__step-num">3</span>
+          <span class="booking__step-text">Arrive and be pampered</span>
+        </div>
+      </div>
+
+      <!-- Secondary Action Pills -->
+      <div class="booking__actions">
+        <a href="tel:+971509921215" class="booking__action-pill" aria-label="Call Ivy's Beauty Secret">
+          <i class="ph-thin ph-phone" aria-hidden="true"></i> Call Now
+        </a>
+        <a href="https://maps.google.com/?q=Ivy's+Beauty+Secret+Musaffah+ME9+Abu+Dhabi"
+           target="_blank" rel="noopener" class="booking__action-pill"
+           aria-label="Get directions to Ivy's Beauty Secret">
+          <i class="ph-thin ph-map-pin" aria-hidden="true"></i> Get Directions
+        </a>
+        <a href="https://www.instagram.com/ivysbeautysecret/"
+           target="_blank" rel="noopener" class="booking__action-pill"
+           aria-label="Follow Ivy's Beauty Secret on Instagram">
+          <i class="ph-thin ph-instagram-logo" aria-hidden="true"></i> Follow Us
+        </a>
+      </div>
+
+    </div><!-- /.booking__content -->
+  </section><!-- /.booking -->
+
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 9 — PREMIUM FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+
+    <!-- Top border gradient -->
+    <div class="footer__top-border" aria-hidden="true"></div>
+
+    <!-- Logo glow -->
+    <div class="footer__glow" aria-hidden="true"></div>
+
+    <div class="container">
+      <div class="footer__grid">
+
+        <!-- Column 1 — Brand -->
+        <div class="footer__brand">
+          <a href="index.html" class="footer__logo-link" aria-label="Ivy's Beauty Secret — Home">
+            <!-- Text fallback logo for footer -->
+            <div class="footer__logo-text">
+              <span class="footer__logo-primary">IVY'S BEAUTY</span>
+              <span class="footer__logo-accent">SECRET</span>
+            </div>
+          </a>
+          <p class="footer__tagline">Where Beauty Meets Luxury</p>
+          <p class="footer__location">Abu Dhabi, United Arab Emirates</p>
+          <p class="footer__brand-tagline">"Be a Pampered Princess" ✦</p>
+
+          <!-- Social Icons -->
+          <div class="footer__socials" role="list" aria-label="Follow Ivy's Beauty Secret on social media">
+            <a href="https://www.instagram.com/ivysbeautysecret/"
+               target="_blank" rel="noopener"
+               class="footer__social" role="listitem"
+               aria-label="Follow Ivy's on Instagram">
+              <i class="ph-thin ph-instagram-logo"></i>
+            </a>
+            <a href="https://wa.me/971509921215"
+               target="_blank" rel="noopener"
+               class="footer__social" role="listitem"
+               aria-label="Chat on WhatsApp">
+              <i class="ph-thin ph-whatsapp-logo"></i>
+            </a>
+            <a href="#" target="_blank" rel="noopener"
+               class="footer__social" role="listitem"
+               aria-label="Follow on TikTok">
+              <i class="ph-thin ph-tiktok-logo"></i>
+            </a>
+            <a href="#" target="_blank" rel="noopener"
+               class="footer__social" role="listitem"
+               aria-label="Follow on Facebook">
+              <i class="ph-thin ph-facebook-logo"></i>
+            </a>
+          </div>
+
+          <!-- Instagram Mini Preview -->
+          <div class="footer__insta" aria-label="Recent Instagram posts">
+            <a href="https://www.instagram.com/ivysbeautysecret/" target="_blank" rel="noopener"
+               class="footer__insta-item" aria-label="View on Instagram">
+              <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=130&q=70"
+                   alt="@ivysbeautysecret on Instagram" width="64" height="64" loading="lazy">
+            </a>
+            <a href="https://www.instagram.com/ivysbeautysecret/" target="_blank" rel="noopener"
+               class="footer__insta-item" aria-label="View on Instagram">
+              <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=130&q=70"
+                   alt="@ivysbeautysecret on Instagram" width="64" height="64" loading="lazy">
+            </a>
+            <a href="https://www.instagram.com/ivysbeautysecret/" target="_blank" rel="noopener"
+               class="footer__insta-item" aria-label="View on Instagram">
+              <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=130&q=70"
+                   alt="@ivysbeautysecret on Instagram" width="64" height="64" loading="lazy">
+            </a>
+          </div>
+          <p class="footer__insta-handle">@ivysbeautysecret</p>
+        </div>
+
+        <!-- Column 2 — Quick Links -->
+        <nav class="footer__nav-col" aria-label="Quick links">
+          <h3 class="footer__col-heading">QUICK LINKS</h3>
+          <ul class="footer__links" role="list">
+            <li><a href="index.html" class="footer__link">Home</a></li>
+            <li><a href="about.html" class="footer__link">About</a></li>
+            <li><a href="services.html" class="footer__link">Services</a></li>
+            <li><a href="gallery.html" class="footer__link">Gallery</a></li>
+            <li><a href="pricing.html" class="footer__link">Pricing</a></li>
+            <li><a href="testimonials.html" class="footer__link">Testimonials</a></li>
+            <li><a href="contact.html" class="footer__link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Column 3 — Services -->
+        <nav class="footer__nav-col" aria-label="Our services">
+          <h3 class="footer__col-heading">OUR SERVICES</h3>
+          <ul class="footer__links" role="list">
+            <li><a href="services.html#hair" class="footer__link">Hair Services</a></li>
+            <li><a href="services.html#makeup" class="footer__link">Makeup & Glam</a></li>
+            <li><a href="services.html#bridal" class="footer__link">Bridal Beauty</a></li>
+            <li><a href="services.html#skin" class="footer__link">Skin & Facial</a></li>
+            <li><a href="services.html#nails" class="footer__link">Nail Services</a></li>
+            <li><a href="services.html#spa" class="footer__link">Spa & Massage</a></li>
+            <li><a href="services.html#threading" class="footer__link">Threading</a></li>
+            <li><a href="services.html#threading" class="footer__link">Waxing</a></li>
+          </ul>
+        </nav>
+
+        <!-- Column 4 — Contact -->
+        <div class="footer__contact-col">
+          <h3 class="footer__col-heading">CONTACT US</h3>
+          <ul class="footer__contact-list" role="list">
+            <li>
+              <i class="ph-thin ph-phone" aria-hidden="true"></i>
+              <a href="tel:+971509921215" class="footer__link">+971 50 992 1215</a>
+            </li>
+            <li>
+              <i class="ph-thin ph-whatsapp-logo" aria-hidden="true"></i>
+              <a href="https://wa.me/971509921215" target="_blank" rel="noopener" class="footer__link">WhatsApp</a>
+            </li>
+            <li>
+              <i class="ph-thin ph-map-pin" aria-hidden="true"></i>
+              <address class="footer__address">
+                Mezzanine Floor · Musaffah ME9<br>
+                Abu Dhabi, United Arab Emirates
+              </address>
+            </li>
+            <li>
+              <i class="ph-thin ph-instagram-logo" aria-hidden="true"></i>
+              <a href="https://www.instagram.com/ivysbeautysecret/"
+                 target="_blank" rel="noopener" class="footer__link">@ivysbeautysecret</a>
+            </li>
+          </ul>
+
+          <!-- Mini booking CTA -->
+          <a href="#booking" class="footer__book-cta">Book an Appointment →</a>
+        </div>
+
+      </div><!-- /.footer__grid -->
+    </div><!-- /.container -->
+
+    <!-- Bottom Bar -->
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <p class="footer__copy">© 2025 Ivy's Beauty Secret Ladies Salon &amp; Spa · All Rights Reserved</p>
+        <p class="footer__address-short">Musaffah ME9, Abu Dhabi, United Arab Emirates</p>
+      </div>
+    </div>
+
+  </footer><!-- /.footer -->
+
+
+  <!-- ═══════════════════════════════════════════
+       FLOATING PERSISTENT ELEMENTS
+  ═══════════════════════════════════════════ -->
+
+  <!-- WhatsApp Floating Widget -->
+  <a href="https://wa.me/971509921215?text=Hello%20Ivy%27s%20Beauty%20Secret.%20I%20would%20like%20to%20arrange%20an%20appointment.%20Please%20let%20me%20know%20your%20availability."
+     class="whatsapp-widget"
+     target="_blank"
+     rel="noopener"
+     id="whatsappWidget"
+     aria-label="Chat with us on WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+    <span class="whatsapp-widget__tooltip" role="tooltip">Chat with us</span>
+  </a>
+
+  <!-- Sticky Mobile Booking Bar (mobile only) -->
+  <div class="mobile-booking-bar" id="mobileBookingBar" aria-label="Quick booking options" hidden>
+    <a href="tel:+971509921215" class="mobile-booking-bar__btn" aria-label="Call Ivy's Beauty Secret">
+      <i class="ph-thin ph-phone" aria-hidden="true"></i>
+      Call Now
+    </a>
+    <a href="#booking" class="mobile-booking-bar__btn mobile-booking-bar__btn--primary" aria-label="Book your appointment">
+      Reserve Your Moment →
+    </a>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
