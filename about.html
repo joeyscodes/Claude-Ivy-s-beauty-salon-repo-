@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us | Ivy's Beauty Secret Ladies Salon & Spa</title>
+<meta name="description" content="Discover the story behind Ivy's Beauty Secret — a premium ladies salon & spa in Musaffah, Abu Dhabi, built around the belief that every woman is a queen.">
+<link rel="icon" id="favicon" href="">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+.page-banner{
+  padding:150px 0 90px;
+  background:
+    radial-gradient(circle at 18% 20%, var(--pink-soft) 0%, transparent 45%),
+    radial-gradient(circle at 85% 15%, var(--blue-soft) 0%, transparent 50%),
+    var(--white);
+  text-align:center;
+  position:relative;
+  overflow:hidden;
+}
+
+/* Story section */
+.story-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:70px;
+  align-items:center;
+}
+.story-photo-wrap{
+  position:relative;
+}
+.story-main-photo{
+  border-radius:40% 60% 55% 45% / 45% 50% 50% 55%;
+  overflow:hidden;
+  aspect-ratio:4/5;
+  box-shadow:var(--shadow-pink);
+  animation:blob-morph2 14s ease-in-out infinite;
+}
+.story-main-photo img{ width:100%; height:100%; object-fit:cover; }
+@keyframes blob-morph2{
+  0%,100%{ border-radius:40% 60% 55% 45% / 45% 50% 50% 55%; }
+  50%{ border-radius:60% 40% 45% 55% / 55% 45% 55% 45%; }
+}
+.story-accent{
+  position:absolute;
+  bottom:-30px; right:-20px;
+  width:48%;
+  aspect-ratio:1/1;
+  border-radius:var(--radius-md);
+  overflow:hidden;
+  border:7px solid var(--white);
+  box-shadow:var(--shadow-soft);
+}
+.story-accent img{ width:100%; height:100%; object-fit:cover; }
+.quote-chip{
+  position:absolute;
+  top:20px; left:-20px;
+  background:linear-gradient(135deg, var(--pink), var(--blue));
+  color:var(--white);
+  border-radius:var(--radius-sm);
+  padding:16px 20px;
+  font-family:var(--font-display);
+  font-style:italic;
+  font-size:1.05rem;
+  font-weight:600;
+  max-width:200px;
+  box-shadow:var(--shadow-pink);
+  z-index:3;
+  animation:float-card 5s ease-in-out infinite;
+}
+
+/* Values grid */
+.values-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:26px;
+  margin-top:56px;
+}
+.value-card{
+  background:var(--white);
+  border-radius:var(--radius-md);
+  padding:30px 24px;
+  text-align:center;
+  box-shadow:var(--shadow-soft);
+  transition:transform .4s ease, box-shadow .4s ease;
+  border:1px solid rgba(255,79,154,.1);
+}
+.value-card:hover{ transform:translateY(-6px); box-shadow:var(--shadow-pink); border-color:var(--pink-soft); }
+.value-icon{
+  width:58px; height:58px; border-radius:50%;
+  background:linear-gradient(135deg, var(--pink-soft), var(--blue-pale));
+  display:flex; align-items:center; justify-content:center;
+  margin:0 auto 16px;
+}
+.value-icon svg{ width:26px; height:26px; color:var(--pink); }
+.value-card h4{ font-family:var(--font-display); font-size:1.1rem; margin-bottom:8px; }
+.value-card p{ font-size:0.88rem; line-height:1.55; color:var(--ink-soft); }
+
+/* Stats strip */
+.stats-strip{
+  background:linear-gradient(120deg, var(--pink) 0%, var(--blue) 100%);
+  border-radius:var(--radius-lg);
+  padding:50px;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:30px;
+  text-align:center;
+  color:var(--white);
+  margin:80px 0;
+}
+.stat-num{
+  font-family:var(--font-display);
+  font-size:2.8rem;
+  font-weight:700;
+  line-height:1;
+  margin-bottom:6px;
+}
+.stat-label{ font-size:0.9rem; opacity:.9; font-weight:600; }
+
+/* Location section */
+.location-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:50px;
+  align-items:center;
+}
+.location-card{
+  background:var(--white);
+  border-radius:var(--radius-md);
+  padding:36px;
+  box-shadow:var(--shadow-soft);
+}
+.location-card .detail{
+  display:flex; align-items:flex-start; gap:14px;
+  margin-bottom:20px;
+}
+.location-card .detail svg{ width:20px; height:20px; color:var(--pink); flex:none; margin-top:3px; }
+.location-card .detail h5{ font-size:0.88rem; text-transform:uppercase; letter-spacing:.06em; color:var(--ink-soft); margin-bottom:4px; }
+.location-card .detail p{ font-weight:600; }
+.map-placeholder{
+  border-radius:var(--radius-md);
+  overflow:hidden;
+  aspect-ratio:16/9;
+  box-shadow:var(--shadow-soft);
+  background:var(--blue-pale);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  gap:12px;
+  color:var(--ink-soft);
+  font-weight:600;
+  text-align:center;
+  padding:20px;
+}
+.map-placeholder svg{ width:48px; height:48px; color:var(--pink); }
+
+@media(max-width:860px){
+  .story-grid, .location-grid{ grid-template-columns:1fr; gap:40px; }
+  .values-grid{ grid-template-columns:1fr 1fr; }
+  .stats-strip{ grid-template-columns:1fr 1fr; padding:34px 24px; }
+  .story-accent, .quote-chip{ display:none; }
+}
+@media(max-width:520px){
+  .values-grid{ grid-template-columns:1fr; }
+  .stats-strip{ grid-template-columns:1fr 1fr; }
+}
+</style>
+</head>
+<body>
+
+<canvas id="sparkle-canvas" aria-hidden="true"></canvas>
+
+<header class="site-header">
+  <div class="container nav-inner">
+    <a href="index.html" class="brand"><img class="brand-logo" alt="Ivy's Beauty Secret logo"><span class="brand-name">Ivy's Beauty Secret<span>Ladies Salon &amp; Spa</span></span></a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a><a href="about.html" class="active">About</a><a href="services.html">Services</a>
+      <a href="gallery.html">Gallery</a><a href="pricing.html">Pricing</a><a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-cta"><a class="btn btn-primary" href="https://wa.me/971509921215?text=Hi%20Ivy%27s%20Beauty%20Secret!%20I%27d%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener">Book Appointment</a></div>
+    <button class="menu-toggle" aria-label="Open menu"><span></span></button>
+  </div>
+</header>
+<div class="mobile-menu">
+  <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a>
+  <a href="gallery.html">Gallery</a><a href="pricing.html">Pricing</a><a href="contact.html">Contact</a>
+  <a class="btn btn-primary" href="https://wa.me/971509921215?text=Hi%20Ivy%27s%20Beauty%20Secret!%20I%27d%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener">Book on WhatsApp</a>
+</div>
+<div class="float-actions">
+  <a class="float-btn instagram" href="https://www.instagram.com/ivysbeautysecret/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+  <a class="float-btn whatsapp" href="https://wa.me/971509921215?text=Hi%20Ivy%27s%20Beauty%20Secret!%20I%27d%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.37 5.07L2 22l5.07-1.33A9.93 9.93 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2Z"/></svg></a>
+</div>
+
+<!-- BANNER -->
+<section class="page-banner">
+  <div class="petal-field" data-count="12"></div>
+  <div class="container reveal">
+    <span class="eyebrow" style="justify-content:center;">
+      <svg class="crown-mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 18h18M4 18l1.5-9L9 13l3-7 3 7 3.5-4L20 18"/></svg>
+      Our Story
+    </span>
+    <h1>About Ivy's Beauty Secret</h1>
+    <p class="lede" style="margin:14px auto 0;text-align:center;">A haven built for every woman — where beauty, self-care and confidence all live under one roof.</p>
+  </div>
+</section>
+
+<!-- OUR STORY -->
+<section class="section">
+  <div class="container">
+    <div class="story-grid">
+      <div class="story-photo-wrap reveal">
+        <div class="quote-chip">"Every woman is a queen — here we treat you like one."</div>
+        <div class="story-main-photo">
+          <img src="https://images.unsplash.com/photo-1551184451-76b762941ad6?auto=format&fit=crop&w=1000&q=80" alt="Beauty specialist at Ivy's Beauty Secret">
+        </div>
+        <div class="story-accent">
+          <img src="https://images.unsplash.com/photo-1560869713-bf165a9cfac1?auto=format&fit=crop&w=500&q=80" alt="Salon interior atmosphere">
+        </div>
+      </div>
+      <div class="reveal reveal-delay-1">
+        <span class="eyebrow">
+          <svg class="crown-mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 18h18M4 18l1.5-9L9 13l3-7 3 7 3.5-4L20 18"/></svg>
+          Who We Are
+        </span>
+        <h2>Beauty, Care &amp; Confidence — All in One Place</h2>
+        <p class="lede" style="margin:18px 0 20px;">Ivy's Beauty Secret is a premium ladies salon &amp; spa located in Musaffah, Abu Dhabi. We believe that every woman deserves to feel beautiful, pampered and confident — and we've built our entire space and service menu around that belief.</p>
+        <p style="color:var(--ink-soft);line-height:1.7;margin-bottom:20px;">From the moment you walk through our doors, you'll feel the difference. Our salon is clean, calm and welcoming — designed to be a retreat from your busy day. Our beauticians are skilled, certified professionals who take pride in their craft and care deeply about your results.</p>
+        <p style="color:var(--ink-soft);line-height:1.7;">Whether you're coming in for a quick blowout or a full bridal glam session, we bring the same level of expertise, premium products and personal attention to every single client. You're not just another appointment — you're our queen for the day.</p>
+        <a class="btn btn-primary" style="margin-top:28px;" href="services.html">Explore Our Services</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VALUES -->
+<section class="section bg-lavender">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow" style="justify-content:center;">
+        <svg class="crown-mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 18h18M4 18l1.5-9L9 13l3-7 3 7 3.5-4L20 18"/></svg>
+        Our Core Values
+      </span>
+      <h2>What We Stand For</h2>
+    </div>
+    <div class="values-grid">
+      <div class="value-card reveal">
+        <div class="value-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l1.5 4.5L18 8l-4.5 1.5L12 14l-1.5-4.5L6 8l4.5-1.5z"/></svg></div>
+        <h4>Premium Quality</h4>
+        <p>We only use high-grade, trusted beauty products. Your skin, hair and nails deserve the very best.</p>
+      </div>
+      <div class="value-card reveal reveal-delay-1">
+        <div class="value-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11Z"/></svg></div>
+        <h4>Cleanliness First</h4>
+        <p>Hygiene is non-negotiable for us. Every station, tool and towel is sanitised between every client.</p>
+      </div>
+      <div class="value-card reveal reveal-delay-2">
+        <div class="value-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+        <h4>Client First</h4>
+        <p>Every decision we make starts with one question: is this the best experience for our client?</p>
+      </div>
+      <div class="value-card reveal reveal-delay-3">
+        <div class="value-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg></div>
+        <h4>Honest Pricing</h4>
+        <p>No hidden costs, no surprises. We believe premium beauty should be fair and transparent.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="section-tight">
+  <div class="container">
+    <div class="stats-strip reveal">
+      <div><div class="stat-num">7+</div><div class="stat-label">Service Categories</div></div>
+      <div><div class="stat-num">30+</div><div class="stat-label">Individual Treatments</div></div>
+      <div><div class="stat-num">100%</div><div class="stat-label">Certified Beauticians</div></div>
+      <div><div class="stat-num">★ 5</div><div class="stat-label">Client Rating</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- LOCATION -->
+<section class="section bg-blue-fade" id="location">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">
+        <svg class="crown-mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 18h18M4 18l1.5-9L9 13l3-7 3 7 3.5-4L20 18"/></svg>
+        Find Us
+      </span>
+      <h2>Visit Us in Musaffah</h2>
+    </div>
+    <div class="location-grid">
+      <div class="location-card reveal">
+        <div class="detail">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11Z"/><circle cx="12" cy="10" r="3"/></svg>
+          <div><h5>Address</h5><p>Al Tawakkal Typing Building, Mezzanine Floor, M03, Musaffah ME9, Abu Dhabi, United Arab Emirates</p></div>
+        </div>
+        <div class="detail">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.9a16 16 0 0 0 6 6l.86-.86a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <div><h5>Phone &amp; WhatsApp</h5><p>+971 50 992 1215</p></div>
+        </div>
+        <div class="detail">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          <div><h5>Instagram</h5><p><a href="https://www.instagram.com/ivysbeautysecret/" target="_blank" rel="noopener" style="color:var(--pink);">@ivysbeautysecret</a></p></div>
+        </div>
+        <a class="btn btn-primary" href="https://wa.me/971509921215?text=Hi%20Ivy%27s%20Beauty%20Secret!%20I%27d%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener" style="width:100%;justify-content:center;">Book on WhatsApp</a>
+      </div>
+      <div class="reveal reveal-delay-1">
+        <div class="map-placeholder">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11Z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>Musaffah ME9, Abu Dhabi</span>
+          <a class="btn btn-outline" style="margin-top:10px;" href="https://maps.google.com/?q=Musaffah+ME9+Abu+Dhabi" target="_blank" rel="noopener">Open in Google Maps</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col"><div class="footer-brand"><img class="brand-logo" alt="Ivy's Beauty Secret logo"><div><h4>Ivy's Beauty Secret</h4><span style="font-size:.8rem;opacity:.7;">Ladies Salon &amp; Spa</span></div></div><p class="footer-tagline">Where beauty meets luxury. We enhance your natural beauty and boost your confidence.</p><div class="footer-social"><a href="https://www.instagram.com/ivysbeautysecret/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a><a href="https://wa.me/971509921215" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.37 5.07L2 22l5.07-1.33A9.93 9.93 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2Z"/></svg></a></div></div>
+      <div class="footer-col"><h5>Quick Links</h5><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-col"><h5>Our Services</h5><ul><li><a href="services.html#hair">Hair Services</a></li><li><a href="services.html#makeup">Beauty &amp; Makeup</a></li><li><a href="services.html#facials">Facials &amp; Skin</a></li><li><a href="services.html#nails">Nails</a></li><li><a href="services.html#brows">Brows &amp; Lashes</a></li><li><a href="services.html#waxing">Waxing</a></li><li><a href="services.html#wellness">Wellness</a></li></ul></div>
+      <div class="footer-col"><h5>Contact Us</h5><ul><li><span>Al Tawakkal Typing Building, M03, Musaffah ME9, Abu Dhabi, UAE</span></li><li><a href="tel:+971509921215">+971 50 992 1215</a></li><li><a href="https://wa.me/971509921215" target="_blank" rel="noopener">WhatsApp Us</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 Ivy's Beauty Secret Ladies Salon &amp; Spa. All rights reserved.</span><span>Be a Pampered Princess ✦</span></div>
+  </div>
+</footer>
+
+<script src="logo-data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

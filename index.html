@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ivy's Beauty Secret Ladies Salon & Spa | Musaffah, Abu Dhabi</title>
+<meta name="description" content="Premium ladies salon & spa in Musaffah, Abu Dhabi. Hair, makeup, facials, nails, brows & lashes, waxing and massage — book on WhatsApp today.">
+<link rel="icon" id="favicon" href="">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<canvas id="sparkle-canvas" aria-hidden="true"></canvas>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header">
+  <div class="container nav-inner">
+    <a href="index.html" class="brand">
+      <img class="brand-logo" alt="Ivy's Beauty Secret logo">
+      <span class="brand-name">Ivy's Beauty Secret<span>Ladies Salon &amp; Spa</span></span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-primary" href="https://wa.me/971509921215?text=Hi%20Ivy%27s%20Beauty%20Secret!%20I%27d%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.37 5.07L2 22l5.07-1.33A9.93 9.93 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2Zm0 18c-1.65 0-3.18-.46-4.5-1.26l-.32-.19-3 .79.8-2.93-.21-.3A7.94 7.94 0 0 1 4 12c0-4.41 3.59-8 8-8s8 3.59 8 8-3.59 8-8 8Zm4.38-5.98c-.24-.12-1.42-.7-1.64-.78-.22-.08-.38-.12-.54.12-.16.24-.62.78-.76.94-.14.16-.28.18-.52.06-.24-.12-1-.37-1.9-1.18-.7-.62-1.18-1.39-1.32-1.63-.14-.24-.02-.37.1-.49.12-.12.27-.31.4-.47.13-.16.18-.27.27-.45.09-.18.04-.34-.04-.46-.08-.12-.5-1.2-.68-1.65-.18-.43-.37-.37-.51-.38-.13-.01-.29-.01-.45-.01-.16 0-.41.06-.63.3-.22.24-.84.82-.84 2 0 1.18.86 2.32.98 2.48.12.16 1.64 2.5 3.98 3.4 2.34.9 2.34.6 2.76.56.42-.04 1.42-.58 1.62-1.14.2-.56.2-1.04.14-1.14-.06-.1-.24-.16-.48-.28Z"/></svg>
+        Book Appointment
+      </a>
+    </div>
+    <button class="menu-toggle" aria-label="Open menu"><span></span></button>
+  </div>
+</header>
+
+<!-- ============ MOBILE MENU ============ -->
+<div class="mobile-menu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="services.html">Services</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="pricing.html">Pricing</a>
+  <a href="contact.html">Contact</a>
+  <a class="btn btn-primary" href="https://wa.me/971509921215?text=Hi%20Ivy%27s%20Beauty%20Secret!%20I%27d%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener">Book on WhatsApp</a>
+</div>
+
+<!-- ============ FLOATING SOCIAL ============ -->
+<div class="float-actions">
+  <a class="float-btn instagram" href="https://www.instagram.com/ivysbeautysecret/" target="_blank" rel="noopener" aria-label="Visit our Instagram">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+  </a>
+  <a class="float-btn whatsapp" href="https://wa.me/971509921215?text=Hi%20Ivy%27s%20Beauty%20Secret!%20I%27d%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener" aria-label="Message us on WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.37 5.07L2 22l5.07-1.33A9.93 9.93 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2Zm0 18c-1.65 0-3.18-.46-4.5-1.26l-.32-.19-3 .79.8-2.93-.21-.3A7.94 7.94 0 0 1 4 12c0-4.41 3.59-8 8-8s8 3.59 8 8-3.59 8-8 8Zm4.38-5.98c-.24-.12-1.42-.7-1.64-.78-.22-.08-.38-.12-.54.12-.16.24-.62.78-.76.94-.14.16-.28.18-.52.06-.24-.12-1-.37-1.9-1.18-.7-.62-1.18-1.39-1.32-1.63-.14-.24-.02-.37.1-.49.12-.12.27-.31.4-.47.13-.16.18-.27.27-.45.09-.18.04-.34-.04-.46-.08-.12-.5-1.2-.68-1.65-.18-.43-.37-.37-.51-.38-.13-.01-.29-.01-.45-.01-.16 0-.41.06-.63.3-.22.24-.84.82-.84 2 0 1.18.86 2.32.98 2.48.12.16 1.64 2.5 3.98 3.4 2.34.9 2.34.6 2.76.56.42-.04 1.42-.58 1.62-1.14.2-.56.2-1.04.14-1.14-.06-.1-.24-.16-.48-.28Z"/></svg>
+  </a>
+</div>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="petal-field" data-count="14"></div>
+  <div class="container hero-grid">
+    <div class="hero-copy reveal">
+      <span class="eyebrow">
+        <svg class="crown-mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18h18M4 18l1.5-9L9 13l3-7 3 7 3.5-4L20 18"/></svg>
+        Be a Pampered Princess
+      </span>
+      <h1>Step Into Your<br><span class="gradient-text">Crown Moment</span></h1>
+      <p class="lede">A premium ladies salon &amp; spa in Musaffah, Abu Dhabi — hair, makeup, skincare, nails and more, delivered with skilled hands and a calm, beautiful space made just for you.</p>
+      <div class="hero-cta-row">
+        <a class="btn btn-primary" href="https://wa.me/971509921215?text=Hi%20Ivy%27s%20Beauty%20Secret!%20I%27d%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.37 5.07L2 22l5.07-1.33A9.93 9.93 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2Z"/></svg>
+          Book on WhatsApp
+        </a>
+        <a class="btn btn-outline" href="services.html">Explore Services</a>
+      </div>
+      <div class="hero-badges">
+        <div class="hero-badge"><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l1.5 4.5L18 8l-4.5 1.5L12 14l-1.5-4.5L6 8l4.5-1.5z"/></svg></span>Expert Beauticians</div>
+        <div class="hero-badge"><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 4 5v6c0 5 3.5 8.5 8 11 4.5-2.5 8-6 8-11V5z"/></svg></span>Hygienic &amp; Safe</div>
+        <div class="hero-badge"><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 3h12l3 6-9 12L3 9Z"/></svg></span>Premium Products</div>
+      </div>
+    </div>
+
+    <div class="hero-visual reveal reveal-delay-2">
+      <div class="hero-halo"></div>
+      <div class="hero-photo-frame">
+        <img src="https://images.unsplash.com/photo-1593351799227-75df2026356b?auto=format&fit=crop&w=1200&q=80" alt="Beauty client with a fresh, glowing look at Ivy's Beauty Secret">
+      </div>
+      <div class="hero-float-card one">
+        <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 3h12l3 6-9 12L3 9Z"/></svg></span>
+        Premium Products Only
+      </div>
+      <div class="hero-float-card two">
+        <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-5.5-7-11a7 7 0 1 1 14 0c0 5.5-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+        Musaffah, Abu Dhabi
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES PREVIEW ============ -->
+<section class="section" id="services">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">
+        <svg class="crown-mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 18h18M4 18l1.5-9L9 13l3-7 3 7 3.5-4L20 18"/></svg>
+        Our Services
+      </span>
+      <h2>Pamper Yourself With Our Signature Treatments</h2>
+      <p class="lede">From everyday hair care to bridal glam — every service is delivered with premium products and a gentle touch.</p>
+    </div>
+
+    <div class="services-grid">
+      <article class="service-card featured reveal">
+        <div class="service-photo">
+          <img src="https://images.unsplash.com/photo-1560869713-bf165a9cfac1?auto=format&fit=crop&w=900&q=80" alt="Hair styling service at Ivy's Beauty Secret">
+          <div class="service-tag"><h3>Hair Services</h3><span>Cuts, color, keratin &amp; more</span></div>
+        </div>
+        <div class="service-body">
+          <a href="services.html#hair">View services <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+        </div>
+      </article>
+
+      <article class="service-card reveal reveal-delay-1">
+        <div class="service-photo">
+          <img src="https://images.unsplash.com/photo-1636023730877-233b9237d4ec?auto=format&fit=crop&w=900&q=80" alt="Makeup application at Ivy's Beauty Secret">
+          <div class="service-tag"><h3>Beauty &amp; Makeup</h3><span>Bridal, party &amp; glam looks</span></div>
+        </div>
+        <div class="service-body">
+          <a href="services.html#makeup">View services <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+        </div>
+      </article>
+
+      <article class="service-card reveal reveal-delay-2">
+        <div class="service-photo">
+          <img src="https://images.unsplash.com/photo-1643684391140-c5056cfd3436?auto=format&fit=crop&w=900&q=80" alt="Facial treatment at Ivy's Beauty Secret">
+          <div class="service-tag"><h3>Facials &amp; Skin Care</h3><span>Hydra facials &amp; acne care</span></div>
+        </div>
+        <div class="service-body">
+          <a href="services.html#facials">View services <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+        </div>
+      </article>
+
+      <article class="service-card reveal">
+        <div class="service-photo">
+          <img src="https://images.unsplash.com/photo-1607779097040-26e80aa78e66?auto=format&fit=crop&w=900&q=80" alt="Manicure at Ivy's Beauty Secret">
+          <div class="service-tag"><h3>Nails</h3><span>Manicure, pedicure &amp; gel</span></div>
+        </div>
+        <div class="service-body">
+          <a href="services.html#nails">View services <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+        </div>
+      </article>
+
+      <article class="service-card reveal reveal-delay-1">
+        <div class="service-photo">
+          <img src="https://images.unsplash.com/photo-1639629509821-c54cdd984227?auto=format&fit=crop&w=900&q=80" alt="Lash and brow treatment at Ivy's Beauty Secret">
+          <div class="service-tag"><h3>Brows &amp; Lashes</h3><span>Shaping &amp; threading</span></div>
+        </div>
+        <div class="service-body">
+          <a href="services.html#brows">View services <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+        </div>
+      </article>
+
+      <article class="service-card reveal reveal-delay-2">
+        <div class="service-photo">
+          <img src="https://images.unsplash.com/photo-1639162906614-0603b0ae95fd?auto=format&fit=crop&w=900&q=80" alt="Relaxing massage at Ivy's Beauty Secret">
+          <div class="service-tag"><h3>Wellness</h3><span>Relaxing massage therapy</span></div>
+        </div>
+        <div class="service-body">
+          <a href="services.html#wellness">View services <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT / WHY / OFFER ============ -->
+<section class="section bg-lavender" id="about">
+  <div class="container">
+    <div class="trio-grid">
+      <div class="trio-card reveal">
+        <span class="eyebrow">
+          <svg class="crown-mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 18h18M4 18l1.5-9L9 13l3-7 3 7 3.5-4L20 18"/></svg>
+          About Us
+        </span>
+        <h3>Every Woman Is&nbsp;a&nbsp;Queen</h3>
+        <p class="lede" style="margin-top:14px;">Tucked inside Al Tawakkal Typing Building in Musaffah, Ivy's Beauty Secret blends skilled hands, premium products and a calm, beautiful space — so you can relax, be pampered, and leave glowing.</p>
+        <a class="btn btn-outline" style="margin-top:20px;" href="about.html">Learn More</a>
+      </div>
+
+      <div class="trio-card reveal reveal-delay-1">
+        <span class="eyebrow">
+          <svg class="crown-mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 18h18M4 18l1.5-9L9 13l3-7 3 7 3.5-4L20 18"/></svg>
+          Why Choose Us
+        </span>
+        <ul class="why-list">
+          <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></span>Skilled &amp; certified beauticians</li>
+          <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></span>Premium, high-quality products</li>
+          <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></span>Clean &amp; relaxing environment</li>
+          <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></span>Transparent, fair pricing</li>
+          <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></span>A warm welcome, every visit</li>
+        </ul>
+      </div>
+
+      <div class="trio-card offer-card reveal reveal-delay-2">
+        <span class="eyebrow">Special Offer</span>
+        <span class="big">20% OFF</span>
+        <p>on your first visit — mention this website when you book.</p>
+        <a class="btn btn-white" href="https://wa.me/971509921215?text=Hi!%20I%27d%20like%20to%20claim%20the%2020%25%20off%20my%20first%20visit." target="_blank" rel="noopener">Claim Offer</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PAMPER CTA STRIP ============ -->
+<section class="section-tight">
+  <div class="container">
+    <div class="pamper-strip reveal">
+      <div class="pamper-photo">
+        <img src="https://images.unsplash.com/photo-1683408640631-2c99fff964d7?auto=format&fit=crop&w=400&q=80" alt="Relaxed spa client">
+      </div>
+      <div class="pamper-text">
+        <h2>It's Time to Pamper Yourself</h2>
+        <p>You deserve to look good, feel good, and be confident. Reach out and let's get you booked in.</p>
+      </div>
+      <div class="pamper-contact">
+        <span class="phone">+971 50 992 1215</span>
+        <a class="btn btn-white" href="https://wa.me/971509921215?text=Hi%20Ivy%27s%20Beauty%20Secret!%20I%27d%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener">Book Appointment</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="section bg-blue-fade" id="testimonials">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow" style="justify-content:center;">
+        <svg class="crown-mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 18h18M4 18l1.5-9L9 13l3-7 3 7 3.5-4L20 18"/></svg>
+        What Our Clients Say
+      </span>
+      <h2>Loved by the Women of Abu Dhabi</h2>
+    </div>
+
+    <!-- NOTE for Josey: these are placeholder quotes — swap in real client
+         reviews before this site goes live. -->
+    <div class="testi-grid">
+      <div class="testi-card reveal">
+        <svg class="quote-mark" viewBox="0 0 24 24" fill="currentColor"><path d="M7 17h2.5L11 13V7H5v6h3.5L7 17Zm8 0h2.5L19 13V7h-6v6h3.5L15 17Z"/></svg>
+        <div class="testi-stars">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 7 7 .6-5.3 4.6L18.5 21 12 17l-6.5 4 1.8-6.8L2 9.6 9 9z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 7 7 .6-5.3 4.6L18.5 21 12 17l-6.5 4 1.8-6.8L2 9.6 9 9z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 7 7 .6-5.3 4.6L18.5 21 12 17l-6.5 4 1.8-6.8L2 9.6 9 9z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 7 7 .6-5.3 4.6L18.5 21 12 17l-6.5 4 1.8-6.8L2 9.6 9 9z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 7 7 .6-5.3 4.6L18.5 21 12 17l-6.5 4 1.8-6.8L2 9.6 9 9z"/></svg>
+        </div>
+        <p>Best salon &amp; spa experience — I love their professionalism and attention to detail every visit.</p>
+        <div class="testi-person">
+          <img src="https://images.unsplash.com/photo-1551184451-76b762941ad6?auto=format&fit=crop&w=120&q=80" alt="Client portrait">
+          <div><div class="name">Sample Client</div><div class="role">Musaffah, Abu Dhabi</div></div>
+        </div>
+      </div>
+
+      <div class="testi-card reveal reveal-delay-1">
+        <svg class="quote-mark" viewBox="0 0 24 24" fill="currentColor"><path d="M7 17h2.5L11 13V7H5v6h3.5L7 17Zm8 0h2.5L19 13V7h-6v6h3.5L15 17Z"/></svg>
+        <div class="testi-stars">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 7 7 .6-5.3 4.6L18.5 21 12 17l-6.5 4 1.8-6.8L2 9.6 9 9z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 7 7 .6-5.3 4.6L18.5 21 12 17l-6.5 4 1.8-6.8L2 9.6 9 9z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 7 7 .6-5.3 4.6L18.5 21 12 17l-6.5 4 1.8-6.8L2 9.6 9 9z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 7 7 .6-5.3 4.6L18.5 21 12 17l-6.5 4 1.8-6.8L2 9.6 9 9z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 7 7 .6-5.3 4.6L18.5 21 12 17l-6.5 4 1.8-6.8L2 9.6 9 9z"/></svg>
+        </div>
+        <p>My go-to place for everything beauty. They make you feel so special every time you visit.</p>
+        <div class="testi-person">
+          <img src="https://images.unsplash.com/photo-1699206791200-414d95e68450?auto=format&fit=crop&w=120&q=80" alt="Client portrait">
+          <div><div class="name">Sample Client</div><div class="role">Abu Dhabi</div></div>
+        </div>
+      </div>
+
+      <div class="testi-card reveal reveal-delay-2">
+        <svg class="quote-mark" viewBox="0 0 24 24" fill="currentColor"><path d="M7 17h2.5L11 13V7H5v6h3.5L7 17Zm8 0h2.5L19 13V7h-6v6h3.5L15 17Z"/></svg>
+        <div class="testi-stars">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 7 7 .6-5.3 4.6L18.5 21 12 17l-6.5 4 1.8-6.8L2 9.6 9 9z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 7 7 .6-5.3 4.6L18.5 21 12 17l-6.5 4 1.8-6.8L2 9.6 9 9z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 7 7 .6-5.3 4.6L18.5 21 12 17l-6.5 4 1.8-6.8L2 9.6 9 9z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 7 7 .6-5.3 4.6L18.5 21 12 17l-6.5 4 1.8-6.8L2 9.6 9 9z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 7 7 .6-5.3 4.6L18.5 21 12 17l-6.5 4 1.8-6.8L2 9.6 9 9z"/></svg>
+        </div>
+        <p>Clean environment, friendly staff and amazing results. Highly recommended to every woman in town.</p>
+        <div class="testi-person">
+          <img src="https://images.unsplash.com/photo-1440589473619-3cde28941638?auto=format&fit=crop&w=120&q=80" alt="Client portrait">
+          <div><div class="name">Sample Client</div><div class="role">Musaffah, Abu Dhabi</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="footer-brand">
+          <img class="brand-logo" alt="Ivy's Beauty Secret logo">
+          <div>
+            <h4>Ivy's Beauty Secret</h4>
+            <span style="font-size:.8rem;opacity:.7;">Ladies Salon &amp; Spa</span>
+          </div>
+        </div>
+        <p class="footer-tagline">Where beauty meets luxury. We enhance your natural beauty and boost your confidence — be a pampered princess.</p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/ivysbeautysecret/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="https://wa.me/971509921215" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.37 5.07L2 22l5.07-1.33A9.93 9.93 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2Z"/></svg></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Our Services</h5>
+        <ul>
+          <li><a href="services.html#hair">Hair Services</a></li>
+          <li><a href="services.html#makeup">Beauty &amp; Makeup</a></li>
+          <li><a href="services.html#facials">Facials &amp; Skin Care</a></li>
+          <li><a href="services.html#nails">Nails</a></li>
+          <li><a href="services.html#brows">Brows &amp; Lashes</a></li>
+          <li><a href="services.html#waxing">Waxing</a></li>
+          <li><a href="services.html#wellness">Wellness</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Contact Us</h5>
+        <ul>
+          <li><span>Al Tawakkal Typing Building, Mezzanine Floor, M03, Musaffah ME9, Abu Dhabi, UAE</span></li>
+          <li><a href="tel:+971509921215">+971 50 992 1215</a></li>
+          <li><a href="https://wa.me/971509921215" target="_blank" rel="noopener">WhatsApp Us</a></li>
+          <li><a href="https://www.instagram.com/ivysbeautysecret/" target="_blank" rel="noopener">@ivysbeautysecret</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 Ivy's Beauty Secret Ladies Salon &amp; Spa. All rights reserved.</span>
+      <span>Be a Pampered Princess ✦</span>
+    </div>
+  </div>
+</footer>
+
+<script src="logo-data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
