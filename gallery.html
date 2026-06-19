@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery | Ivy's Beauty Secret Ladies Salon & Spa — Abu Dhabi</title>
+<meta name="description" content="Browse the Ivy's Beauty Secret gallery — real transformations in hair, makeup, facials, nails and more at our Abu Dhabi ladies salon.">
+<link rel="icon" href="assets/img/logo.jpg">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+<style>
+.page-hero{position:relative;padding:160px 0 80px;background:var(--grad-hero-bg);text-align:center;overflow:hidden;}
+.page-hero h1{font-size:clamp(2.4rem,5vw,3.8rem);}
+.page-hero p{color:var(--ink-soft);max-width:560px;margin:16px auto 0;font-size:1.05rem;}
+
+/* Filter tabs */
+.filter-bar{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-bottom:50px;}
+.filter-btn{padding:10px 22px;border-radius:var(--radius-pill);border:1.5px solid var(--soft-pink);font-size:.88rem;font-weight:600;color:var(--ink-soft);background:#fff;cursor:pointer;transition:.3s;}
+.filter-btn.active,.filter-btn:hover{background:var(--grad-primary);color:#fff;border-color:transparent;box-shadow:var(--shadow-pink);}
+
+/* Masonry-style grid */
+.gallery-grid{columns:3;column-gap:18px;}
+@media(max-width:860px){.gallery-grid{columns:2;}}
+@media(max-width:480px){.gallery-grid{columns:1;}}
+.gallery-item{break-inside:avoid;margin-bottom:18px;border-radius:var(--radius-md);overflow:hidden;cursor:pointer;position:relative;}
+.gallery-item img{width:100%;display:block;transition:transform .7s var(--ease-cinematic);}
+.gallery-item:hover img{transform:scale(1.06);}
+.gallery-item .overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(58,46,77,.7),transparent);opacity:0;display:flex;align-items:flex-end;padding:18px;transition:opacity .4s;}
+.gallery-item:hover .overlay{opacity:1;}
+.gallery-item .overlay span{color:#fff;font-size:.85rem;font-weight:600;}
+
+/* Lightbox */
+.lightbox{position:fixed;inset:0;background:rgba(20,14,35,.92);z-index:2000;display:none;align-items:center;justify-content:center;}
+.lightbox.open{display:flex;}
+.lightbox img{max-width:90vw;max-height:88vh;border-radius:var(--radius-md);box-shadow:0 30px 80px rgba(0,0,0,.5);}
+.lb-close{position:absolute;top:22px;right:26px;color:#fff;font-size:1.8rem;cursor:pointer;background:none;border:none;transition:.3s;}
+.lb-close:hover{transform:scale(1.2);}
+.lb-arrow{position:absolute;top:50%;transform:translateY(-50%);color:#fff;font-size:1.6rem;cursor:pointer;background:rgba(255,255,255,.12);border:none;width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;transition:.3s;}
+.lb-arrow:hover{background:rgba(255,255,255,.28);}
+.lb-prev{left:20px;}
+.lb-next{right:20px;}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav-inner">
+    <a href="index.html" class="brand">
+      <img src="assets/img/logo.jpg" alt="Ivy's Beauty Secret logo">
+      <span class="brand-text">Ivy's Beauty Secret<span>Ladies Salon &amp; Spa</span></span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a><a href="about.html">About Us</a>
+      <a href="services.html">Services</a>
+      <a href="gallery.html" class="active">Gallery</a>
+      <a href="pricing.html">Pricing</a><a href="testimonials.html">Testimonials</a><a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="contact.html#book" class="btn btn-primary btn-sm"><i class="fa-solid fa-calendar-check"></i> Book Appointment</a>
+      <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="sparkle-field" data-sparkles="12" data-petals="5"></div>
+  <div class="container" style="position:relative;z-index:2;">
+    <span class="eyebrow">Our Work</span>
+    <h1>Beauty <span style="background:var(--grad-primary);-webkit-background-clip:text;background-clip:text;color:transparent;">Gallery</span></h1>
+    <p>Real transformations. Real results. Browse highlights from our treatments across hair, makeup, nails, facials and more.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="filter-bar">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="hair">Hair</button>
+      <button class="filter-btn" data-filter="makeup">Makeup</button>
+      <button class="filter-btn" data-filter="nails">Nails</button>
+      <button class="filter-btn" data-filter="facials">Facials</button>
+      <button class="filter-btn" data-filter="wellness">Wellness</button>
+    </div>
+
+    <div class="gallery-grid reveal" id="galleryGrid">
+      <div class="gallery-item" data-cat="hair" data-src="https://images.unsplash.com/photo-1634449571010-02389ed0f9b0?auto=format&fit=crop&w=1200&q=80">
+        <img src="https://images.unsplash.com/photo-1634449571010-02389ed0f9b0?auto=format&fit=crop&w=700&q=80" alt="Hair styling">
+        <div class="overlay"><span><i class="fa-solid fa-scissors"></i> Hair Styling</span></div>
+      </div>
+      <div class="gallery-item" data-cat="makeup" data-src="https://images.unsplash.com/photo-1630084775816-7abb7383ded5?auto=format&fit=crop&w=1200&q=80">
+        <img src="https://images.unsplash.com/photo-1630084775816-7abb7383ded5?auto=format&fit=crop&w=700&q=80" alt="Makeup">
+        <div class="overlay"><span><i class="fa-solid fa-palette"></i> Glamour Makeup</span></div>
+      </div>
+      <div class="gallery-item" data-cat="nails" data-src="https://images.unsplash.com/photo-1607779097040-26e80aa78e66?auto=format&fit=crop&w=1200&q=80">
+        <img src="https://images.unsplash.com/photo-1607779097040-26e80aa78e66?auto=format&fit=crop&w=700&q=80" alt="Nail art">
+        <div class="overlay"><span><i class="fa-solid fa-hand-sparkles"></i> Pink Manicure</span></div>
+      </div>
+      <div class="gallery-item" data-cat="facials" data-src="https://images.unsplash.com/photo-1643684391140-c5056cfd3436?auto=format&fit=crop&w=1200&q=80">
+        <img src="https://images.unsplash.com/photo-1643684391140-c5056cfd3436?auto=format&fit=crop&w=700&q=80" alt="Facial treatment">
+        <div class="overlay"><span><i class="fa-solid fa-spa"></i> Facial Treatment</span></div>
+      </div>
+      <div class="gallery-item" data-cat="hair" data-src="https://images.unsplash.com/photo-1675034743339-0b0747047727?auto=format&fit=crop&w=1200&q=80">
+        <img src="https://images.unsplash.com/photo-1675034743339-0b0747047727?auto=format&fit=crop&w=700&q=80" alt="Hair done in salon">
+        <div class="overlay"><span><i class="fa-solid fa-scissors"></i> Salon Hair</span></div>
+      </div>
+      <div class="gallery-item" data-cat="wellness" data-src="https://images.unsplash.com/photo-1639162906614-0603b0ae95fd?auto=format&fit=crop&w=1200&q=80">
+        <img src="https://images.unsplash.com/photo-1639162906614-0603b0ae95fd?auto=format&fit=crop&w=700&q=80" alt="Relaxing massage">
+        <div class="overlay"><span><i class="fa-solid fa-heart-pulse"></i> Wellness Massage</span></div>
+      </div>
+      <div class="gallery-item" data-cat="makeup" data-src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?auto=format&fit=crop&w=1200&q=80">
+        <img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?auto=format&fit=crop&w=700&q=80" alt="Makeup brushes">
+        <div class="overlay"><span><i class="fa-solid fa-palette"></i> Makeup Tools</span></div>
+      </div>
+      <div class="gallery-item" data-cat="nails" data-src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?auto=format&fit=crop&w=1200&q=80">
+        <img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?auto=format&fit=crop&w=700&q=80" alt="Nails done">
+        <div class="overlay"><span><i class="fa-solid fa-hand-sparkles"></i> Nail Art</span></div>
+      </div>
+      <div class="gallery-item" data-cat="hair" data-src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=1200&q=80">
+        <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=700&q=80" alt="Blowout styling">
+        <div class="overlay"><span><i class="fa-solid fa-scissors"></i> Blowout</span></div>
+      </div>
+      <div class="gallery-item" data-cat="facials" data-src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=1200&q=80">
+        <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=700&q=80" alt="Skin care facial">
+        <div class="overlay"><span><i class="fa-solid fa-spa"></i> Skin Care</span></div>
+      </div>
+      <div class="gallery-item" data-cat="hair" data-src="https://images.unsplash.com/photo-1560869713-7d0a29430803?auto=format&fit=crop&w=1200&q=80">
+        <img src="https://images.unsplash.com/photo-1560869713-7d0a29430803?auto=format&fit=crop&w=700&q=80" alt="Hair curling">
+        <div class="overlay"><span><i class="fa-solid fa-scissors"></i> Curling &amp; Styling</span></div>
+      </div>
+      <div class="gallery-item" data-cat="facials" data-src="https://images.unsplash.com/photo-1731514771613-991a02407132?auto=format&fit=crop&w=1200&q=80">
+        <img src="https://images.unsplash.com/photo-1731514771613-991a02407132?auto=format&fit=crop&w=700&q=80" alt="Facial mask">
+        <div class="overlay"><span><i class="fa-solid fa-spa"></i> Facial Mask</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section-tight" style="background:var(--grad-soft);">
+  <div class="container" style="text-align:center;">
+    <div class="reveal">
+      <span class="eyebrow">Love What You See?</span>
+      <h2 style="margin:8px 0 16px;">Book Your Transformation Today</h2>
+      <p style="color:var(--ink-soft);max-width:480px;margin:0 auto 28px;">Every client leaves Ivy's Beauty Secret looking and feeling their absolute best. Your transformation is one appointment away.</p>
+      <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+        <a href="contact.html#book" class="btn btn-primary"><i class="fa-solid fa-calendar-check"></i> Book Appointment</a>
+        <a href="https://wa.me/971509921215" target="_blank" rel="noopener" class="btn btn-outline"><i class="fa-brands fa-whatsapp"></i> WhatsApp Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true">
+  <button class="lb-close" id="lbClose"><i class="fa-solid fa-xmark"></i></button>
+  <button class="lb-arrow lb-prev" id="lbPrev"><i class="fa-solid fa-chevron-left"></i></button>
+  <img src="" alt="Gallery image" id="lbImg">
+  <button class="lb-arrow lb-next" id="lbNext"><i class="fa-solid fa-chevron-right"></i></button>
+</div>
+
+<footer class="site-footer">
+  <div class="container footer-top">
+    <div><div class="footer-brand"><img src="assets/img/logo.jpg" alt="Logo"><b>Ivy's Beauty Secret</b></div><p>Where beauty meets luxury. Be a Pampered Princess.</p><div class="social-row"><a href="https://www.instagram.com/ivysbeautysecret/?hl=en" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a><a href="https://wa.me/971509921215" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i></a><a href="#"><i class="fa-brands fa-facebook-f"></i></a><a href="#"><i class="fa-brands fa-tiktok"></i></a></div></div>
+    <div><h4>Quick Links</h4><ul class="footer-links"><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="testimonials.html">Testimonials</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    <div><h4>Our Services</h4><ul class="footer-links"><li><a href="services.html#hair">Hair Services</a></li><li><a href="services.html#makeup">Beauty &amp; Makeup</a></li><li><a href="services.html#facials">Facials &amp; Skin Care</a></li><li><a href="services.html#nails">Nails</a></li><li><a href="services.html#brows">Brows &amp; Lashes</a></li><li><a href="services.html#waxing">Waxing</a></li><li><a href="services.html#wellness">Wellness</a></li></ul></div>
+    <div><h4>Contact Us</h4><ul class="footer-contact"><li><i class="fa-solid fa-phone"></i> +971 50 992 1215</li><li><i class="fa-brands fa-whatsapp"></i> +971 50 992 1215</li><li><i class="fa-solid fa-location-dot"></i> Al Tawakkal Typing Building, Mezzanine Floor, M03, Musaffah ME9, Abu Dhabi, UAE</li></ul></div>
+  </div>
+  <div class="container footer-bottom"><span>© 2026 Ivy's Beauty Secret Ladies Salon &amp; Spa. All Rights Reserved.</span><span>Be a Pampered Princess</span></div>
+</footer>
+<div class="fab-stack">
+  <a href="https://www.instagram.com/ivysbeautysecret/?hl=en" target="_blank" rel="noopener" class="fab fab-instagram"><i class="fa-brands fa-instagram"></i></a>
+  <a href="https://wa.me/971509921215" target="_blank" rel="noopener" class="fab fab-whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="js/script.js"></script>
+<script>
+// Filter
+const filterBtns = document.querySelectorAll('.filter-btn');
+const items = document.querySelectorAll('.gallery-item');
+filterBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    filterBtns.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const f = btn.dataset.filter;
+    items.forEach(item => {
+      item.style.display = (f === 'all' || item.dataset.cat === f) ? 'block' : 'none';
+    });
+  });
+});
+
+// Lightbox
+const lb = document.getElementById('lightbox');
+const lbImg = document.getElementById('lbImg');
+let currentIndex = 0;
+const visibleItems = () => [...items].filter(i => i.style.display !== 'none');
+
+items.forEach((item, i) => {
+  item.addEventListener('click', () => {
+    const vi = visibleItems();
+    currentIndex = vi.indexOf(item);
+    lbImg.src = item.dataset.src;
+    lb.classList.add('open');
+  });
+});
+document.getElementById('lbClose').addEventListener('click', () => lb.classList.remove('open'));
+lb.addEventListener('click', e => { if(e.target === lb) lb.classList.remove('open'); });
+document.getElementById('lbPrev').addEventListener('click', () => {
+  const vi = visibleItems();
+  currentIndex = (currentIndex - 1 + vi.length) % vi.length;
+  lbImg.src = vi[currentIndex].dataset.src;
+});
+document.getElementById('lbNext').addEventListener('click', () => {
+  const vi = visibleItems();
+  currentIndex = (currentIndex + 1) % vi.length;
+  lbImg.src = vi[currentIndex].dataset.src;
+});
+document.addEventListener('keydown', e => {
+  if(e.key === 'Escape') lb.classList.remove('open');
+  if(e.key === 'ArrowLeft') document.getElementById('lbPrev').click();
+  if(e.key === 'ArrowRight') document.getElementById('lbNext').click();
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services | Ivy's Beauty Secret Ladies Salon & Spa — Abu Dhabi</title>
+<meta name="description" content="Explore all 7 service categories at Ivy's Beauty Secret: Hair, Makeup, Facials, Nails, Brows & Lashes, Waxing, and Wellness — in Musaffah, Abu Dhabi.">
+<link rel="icon" href="assets/img/logo.jpg">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+<style>
+.page-hero{position:relative;padding:160px 0 80px;background:var(--grad-hero-bg);text-align:center;overflow:hidden;}
+.page-hero h1{font-size:clamp(2.4rem,5vw,3.8rem);}
+.page-hero p{color:var(--ink-soft);max-width:560px;margin:16px auto 0;font-size:1.05rem;}
+
+/* Tab bar */
+.tabs-bar{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-bottom:60px;}
+.tab-btn{padding:11px 26px;border-radius:var(--radius-pill);border:1.5px solid var(--soft-pink);font-size:.9rem;font-weight:600;color:var(--ink-soft);background:#fff;cursor:pointer;transition:.35s;}
+.tab-btn.active,.tab-btn:hover{background:var(--grad-primary);color:#fff;border-color:transparent;box-shadow:var(--shadow-pink);}
+
+/* Category section */
+.cat-section{display:none;animation:fadeUp .55s var(--ease-cinematic) both;}
+.cat-section.active{display:block;}
+
+.cat-hero{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;margin-bottom:60px;}
+.cat-hero img{width:100%;height:420px;object-fit:cover;border-radius:var(--radius-lg);box-shadow:var(--shadow-lift);}
+.cat-hero-copy .icon-big{width:72px;height:72px;border-radius:50%;background:var(--grad-primary);color:#fff;font-size:1.8rem;display:flex;align-items:center;justify-content:center;margin-bottom:20px;box-shadow:var(--shadow-pink);}
+.cat-hero-copy h2{font-size:clamp(1.8rem,3vw,2.6rem);margin-bottom:14px;}
+.cat-hero-copy p{color:var(--ink-soft);line-height:1.75;margin-bottom:26px;}
+@media(max-width:860px){.cat-hero{grid-template-columns:1fr;}.cat-hero img{height:280px;}}
+
+/* Service list pills */
+.service-list{display:flex;flex-wrap:wrap;gap:12px;}
+.service-pill{padding:10px 20px;border-radius:var(--radius-pill);background:var(--grad-soft);border:1px solid var(--soft-pink);font-size:.88rem;font-weight:500;color:var(--ink);display:flex;align-items:center;gap:8px;transition:transform .3s,box-shadow .3s;}
+.service-pill:hover{transform:translateY(-3px);box-shadow:var(--shadow-soft);}
+.service-pill i{color:var(--hot-pink);font-size:.8rem;}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav-inner">
+    <a href="index.html" class="brand">
+      <img src="assets/img/logo.jpg" alt="Ivy's Beauty Secret logo">
+      <span class="brand-text">Ivy's Beauty Secret<span>Ladies Salon &amp; Spa</span></span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a><a href="about.html">About Us</a>
+      <a href="services.html" class="active">Services</a>
+      <a href="gallery.html">Gallery</a><a href="pricing.html">Pricing</a>
+      <a href="testimonials.html">Testimonials</a><a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="contact.html#book" class="btn btn-primary btn-sm"><i class="fa-solid fa-calendar-check"></i> Book Appointment</a>
+      <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="sparkle-field" data-sparkles="12" data-petals="6"></div>
+  <div class="container" style="position:relative;z-index:2;">
+    <span class="eyebrow">What We Offer</span>
+    <h1>Our <span style="background:var(--grad-primary);-webkit-background-clip:text;background-clip:text;color:transparent;">Premium Services</span></h1>
+    <p>Seven expertly curated service categories — from root to nail tip. Every treatment is performed by certified beauticians using premium, salon-grade products.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="tabs-bar">
+      <button class="tab-btn active" data-tab="hair"><i class="fa-solid fa-scissors"></i> Hair</button>
+      <button class="tab-btn" data-tab="makeup"><i class="fa-solid fa-palette"></i> Beauty &amp; Makeup</button>
+      <button class="tab-btn" data-tab="facials"><i class="fa-solid fa-spa"></i> Facials &amp; Skin</button>
+      <button class="tab-btn" data-tab="nails"><i class="fa-solid fa-hand-sparkles"></i> Nails</button>
+      <button class="tab-btn" data-tab="brows"><i class="fa-solid fa-eye"></i> Brows &amp; Lashes</button>
+      <button class="tab-btn" data-tab="waxing"><i class="fa-solid fa-feather"></i> Waxing</button>
+      <button class="tab-btn" data-tab="wellness"><i class="fa-solid fa-heart-pulse"></i> Wellness</button>
+    </div>
+
+    <!-- HAIR -->
+    <div class="cat-section active" id="hair">
+      <div class="cat-hero">
+        <img src="https://images.unsplash.com/photo-1634449571010-02389ed0f9b0?auto=format&fit=crop&w=900&q=80" alt="Hair services at Ivy's Beauty Secret">
+        <div class="cat-hero-copy">
+          <div class="icon-big"><i class="fa-solid fa-scissors"></i></div>
+          <h2>Hair Services</h2>
+          <p>From everyday cuts and blowouts to transformative colour treatments and intensive hair spa rituals — our hair experts deliver stunning results tailored to your unique hair type and lifestyle. We use only premium, professional-grade products to protect and enhance your natural hair.</p>
+          <a href="contact.html#book" class="btn btn-primary"><i class="fa-solid fa-calendar-check"></i> Book This Service</a>
+        </div>
+      </div>
+      <div class="service-list">
+        <span class="service-pill"><i class="fa-solid fa-star"></i> Haircut</span>
+        <span class="service-pill"><i class="fa-solid fa-star"></i> Hair Trim</span>
+        <span class="service-pill"><i class="fa-solid fa-star"></i> Hairstyling</span>
+        <span class="service-pill"><i class="fa-solid fa-star"></i> Hair Styling</span>
+        <span class="service-pill"><i class="fa-solid fa-star"></i> Blowouts</span>
+        <span class="service-pill"><i class="fa-solid fa-star"></i> Shampoo &amp; Conditioning</span>
+        <span class="service-pill"><i class="fa-solid fa-star"></i> Hair Extensions</span>
+        <span class="service-pill"><i class="fa-solid fa-star"></i> Hair Coloring</span>
+        <span class="service-pill"><i class="fa-solid fa-star"></i> Root Touch-Up</span>
+        <span class="service-pill"><i class="fa-solid fa-star"></i> Highlights</span>
+        <span class="service-pill"><i class="fa-solid fa-star"></i> Peekaboo Highlights</span>
+        <span class="service-pill"><i class="fa-solid fa-star"></i> Lowlights</span>
+        <span class="service-pill"><i class="fa-solid fa-star"></i> Ombre</span>
+        <span class="service-pill"><i class="fa-solid fa-star"></i> Balayage</span>
+        <span class="service-pill"><i class="fa-solid fa-star"></i> Hair Spa</span>
+        <span class="service-pill"><i class="fa-solid fa-star"></i> Organic Keratin Treatment</span>
+        <span class="service-pill"><i class="fa-solid fa-star"></i> Botox Treatment</span>
+        <span class="service-pill"><i class="fa-solid fa-star"></i> Collagen Treatment</span>
+      </div>
+    </div>
+
+    <!-- MAKEUP -->
+    <div class="cat-section" id="makeup">
+      <div class="cat-hero">
+        <img src="https://images.unsplash.com/photo-1630084775816-7abb7383ded5?auto=format&fit=crop&w=900&q=80" alt="Makeup services at Ivy's Beauty Secret">
+        <div class="cat-hero-copy">
+          <div class="icon-big"><i class="fa-solid fa-palette"></i></div>
+          <h2>Beauty &amp; Makeup</h2>
+          <p>Bridal glam, show-stopping party looks or a polished everyday makeover — our makeup artists blend creativity with precision to bring your vision to life. Using long-lasting, premium cosmetics that photograph beautifully and feel lightweight all day.</p>
+          <a href="contact.html#book" class="btn btn-primary"><i class="fa-solid fa-calendar-check"></i> Book This Service</a>
+        </div>
+      </div>
+      <div class="service-list">
+        <span class="service-pill"><i class="fa-solid fa-star"></i> Bridal Makeup</span>
+        <span class="service-pill"><i class="fa-solid fa-star"></i> Party Makeup</span>
+        <span class="service-pill"><i class="fa-solid fa-star"></i> Makeovers</span>
+        <span class="service-pill"><i class="fa-solid fa-star"></i> Makeup Services</span>
+      </div>
+    </div>
+
+    <!-- FACIALS -->
+    <div class="cat-section" id="facials">
+      <div class="cat-hero">
+        <img src="https://images.unsplash.com/photo-1643684391140-c5056cfd3436?auto=format&fit=crop&w=900&q=80" alt="Facial treatment at Ivy's Beauty Secret">
+        <div class="cat-hero-copy">
+          <div class="icon-big"><i class="fa-solid fa-spa"></i></div>
+          <h2>Facials &amp; Skin Care</h2>
+          <p>Reveal your most radiant skin with our range of professional facial treatments. From deep-cleansing classic facials to advanced HydraFacial technology and targeted acne solutions — each treatment is customised to your skin type and goals for visible, lasting results.</p>
+          <a href="contact.html#book" class="btn btn-primary"><i class="fa-solid fa-calendar-check"></i> Book This Service</a>
+        </div>
+      </div>
+      <div class="service-list">
+        <span class="service-pill"><i class="fa-solid fa-star"></i> Facial</span>
+        <span class="service-pill"><i class="fa-solid fa-star"></i> Hydra Facial</span>
+        <span class="service-pill"><i class="fa-solid fa-star"></i> Acne Treatments</span>
+        <span class="service-pill"><i class="fa-solid fa-star"></i> Bleaching</span>
+      </div>
+    </div>
+
+    <!-- NAILS -->
+    <div class="cat-section" id="nails">
+      <div class="cat-hero">
+        <img src="https://images.unsplash.com/photo-1607779097040-26e80aa78e66?auto=format&fit=crop&w=900&q=80" alt="Nail services at Ivy's Beauty Secret">
+        <div class="cat-hero-copy">
+          <div class="icon-big"><i class="fa-solid fa-hand-sparkles"></i></div>
+          <h2>Nails</h2>
+          <p>Beautiful nails are a luxury, not an exception. Our nail technicians offer everything from relaxing spa manicures and pedicures to flawless gel extensions and trendy polygel sets — all using high-quality, long-lasting nail products.</p>
+          <a href="contact.html#book" class="btn btn-primary"><i class="fa-solid fa-calendar-check"></i> Book This Service</a>
+        </div>
+      </div>
+      <div class="service-list">
+        <span class="service-pill"><i class="fa-solid fa-star"></i> Manicure</span>
+        <span class="service-pill"><i class="fa-solid fa-star"></i> Pedicure</span>
+        <span class="service-pill"><i class="fa-solid fa-star"></i> Gel Polish</span>
+        <span class="service-pill"><i class="fa-solid fa-star"></i> Gel Extensions</span>
+        <span class="service-pill"><i class="fa-solid fa-star"></i> Polygel Extensions</span>
+        <span class="service-pill"><i class="fa-solid fa-star"></i> Manicure Spa</span>
+        <span class="service-pill"><i class="fa-solid fa-star"></i> Pedicure Spa</span>
+      </div>
+    </div>
+
+    <!-- BROWS -->
+    <div class="cat-section" id="brows">
+      <div class="cat-hero">
+        <img src="https://images.unsplash.com/photo-1674049406179-d7bf2c263e71?auto=format&fit=crop&w=900&q=80" alt="Brow and lash services at Ivy's Beauty Secret">
+        <div class="cat-hero-copy">
+          <div class="icon-big"><i class="fa-solid fa-eye"></i></div>
+          <h2>Brows &amp; Lashes</h2>
+          <p>Well-groomed brows and defined lashes frame your entire face and elevate any look. Our specialists deliver precise, perfectly shaped brows through threading or expert shaping — enhancing your natural features beautifully.</p>
+          <a href="contact.html#book" class="btn btn-primary"><i class="fa-solid fa-calendar-check"></i> Book This Service</a>
+        </div>
+      </div>
+      <div class="service-list">
+        <span class="service-pill"><i class="fa-solid fa-star"></i> Eyebrow Shaping</span>
+        <span class="service-pill"><i class="fa-solid fa-star"></i> Eyebrow Threading</span>
+        <span class="service-pill"><i class="fa-solid fa-star"></i> Threading</span>
+      </div>
+    </div>
+
+    <!-- WAXING -->
+    <div class="cat-section" id="waxing">
+      <div class="cat-hero">
+        <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=900&q=80" alt="Waxing treatment at Ivy's Beauty Secret">
+        <div class="cat-hero-copy">
+          <div class="icon-big"><i class="fa-solid fa-feather"></i></div>
+          <h2>Waxing</h2>
+          <p>Smooth, silky skin — done right. Our waxing treatments are performed with the utmost care, privacy and professionalism in our ladies-only environment. We use premium wax formulas designed to minimise discomfort and leave your skin perfectly smooth.</p>
+          <a href="contact.html#book" class="btn btn-primary"><i class="fa-solid fa-calendar-check"></i> Book This Service</a>
+        </div>
+      </div>
+      <div class="service-list">
+        <span class="service-pill"><i class="fa-solid fa-star"></i> Body Waxing</span>
+        <span class="service-pill"><i class="fa-solid fa-star"></i> Brazilian Waxing</span>
+        <span class="service-pill"><i class="fa-solid fa-star"></i> Waxing</span>
+      </div>
+    </div>
+
+    <!-- WELLNESS -->
+    <div class="cat-section" id="wellness">
+      <div class="cat-hero">
+        <img src="https://images.unsplash.com/photo-1639162906614-0603b0ae95fd?auto=format&fit=crop&w=900&q=80" alt="Wellness massage at Ivy's Beauty Secret">
+        <div class="cat-hero-copy">
+          <div class="icon-big"><i class="fa-solid fa-heart-pulse"></i></div>
+          <h2>Wellness</h2>
+          <p>True beauty starts from within — and that means taking time to truly rest and restore. Our wellness treatments are designed to release tension, calm the mind and leave your body feeling completely renewed. The perfect complement to any beauty visit.</p>
+          <a href="contact.html#book" class="btn btn-primary"><i class="fa-solid fa-calendar-check"></i> Book This Service</a>
+        </div>
+      </div>
+      <div class="service-list">
+        <span class="service-pill"><i class="fa-solid fa-star"></i> Massage</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Offer + CTA -->
+<section class="section-tight">
+  <div class="container">
+    <div class="offer-banner reveal">
+      <h3>First Visit Special</h3>
+      <h2>GET <span class="accent">20% OFF</span> YOUR FIRST VISIT</h2>
+      <a href="contact.html#book" class="btn btn-white">Claim Your Offer <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-top">
+    <div><div class="footer-brand"><img src="assets/img/logo.jpg" alt="Logo"><b>Ivy's Beauty Secret</b></div><p>Where beauty meets luxury. Be a Pampered Princess.</p><div class="social-row"><a href="https://www.instagram.com/ivysbeautysecret/?hl=en" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a><a href="https://wa.me/971509921215" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i></a><a href="#"><i class="fa-brands fa-facebook-f"></i></a><a href="#"><i class="fa-brands fa-tiktok"></i></a></div></div>
+    <div><h4>Quick Links</h4><ul class="footer-links"><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="testimonials.html">Testimonials</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    <div><h4>Our Services</h4><ul class="footer-links"><li><a href="#hair">Hair Services</a></li><li><a href="#makeup">Beauty &amp; Makeup</a></li><li><a href="#facials">Facials &amp; Skin Care</a></li><li><a href="#nails">Nails</a></li><li><a href="#brows">Brows &amp; Lashes</a></li><li><a href="#waxing">Waxing</a></li><li><a href="#wellness">Wellness</a></li></ul></div>
+    <div><h4>Contact Us</h4><ul class="footer-contact"><li><i class="fa-solid fa-phone"></i> +971 50 992 1215</li><li><i class="fa-brands fa-whatsapp"></i> +971 50 992 1215</li><li><i class="fa-solid fa-location-dot"></i> Al Tawakkal Typing Building, Mezzanine Floor, M03, Musaffah ME9, Abu Dhabi, UAE</li></ul></div>
+  </div>
+  <div class="container footer-bottom"><span>© 2026 Ivy's Beauty Secret Ladies Salon &amp; Spa. All Rights Reserved.</span><span>Be a Pampered Princess</span></div>
+</footer>
+<div class="fab-stack">
+  <a href="https://www.instagram.com/ivysbeautysecret/?hl=en" target="_blank" rel="noopener" class="fab fab-instagram"><i class="fa-brands fa-instagram"></i></a>
+  <a href="https://wa.me/971509921215" target="_blank" rel="noopener" class="fab fab-whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="js/script.js"></script>
+<script>
+// Tab switcher
+const tabBtns = document.querySelectorAll('.tab-btn');
+const catSections = document.querySelectorAll('.cat-section');
+tabBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    tabBtns.forEach(b => b.classList.remove('active'));
+    catSections.forEach(s => s.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById(btn.dataset.tab).classList.add('active');
+  });
+});
+// Hash-based deep linking e.g. services.html#nails
+const hash = location.hash.replace('#','');
+if(hash){
+  const target = document.querySelector(`.tab-btn[data-tab="${hash}"]`);
+  if(target) target.click();
+}
+</script>
+</body>
+</html>
