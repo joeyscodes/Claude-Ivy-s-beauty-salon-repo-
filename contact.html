@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact & Book | Ivy's Beauty Secret Ladies Salon & Spa</title>
+<meta name="description" content="Visit or message Ivy's Beauty Secret in Musaffah, Abu Dhabi. Call, WhatsApp, or send an enquiry to book your appointment.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<script src="assets/logo-data.js"></script>
+</head>
+<body>
+
+<header class="site-header">
+  <a href="index.html" class="brand">
+    <span class="brand-mark halo-ring"><img id="logoHeader" alt="Ivy's Beauty Secret crest"></span>
+    <span class="brand-text">
+      <span class="name">Ivy's Beauty Secret</span>
+      <span class="tag">Ladies Salon &amp; Spa</span>
+    </span>
+  </a>
+  <nav class="nav-desktop">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html" class="active">Contact</a>
+  </nav>
+  <div class="nav-cta">
+    <a href="tel:+971509921215" class="btn btn-outline">+971 50 992 1215</a>
+    <a href="https://wa.me/971509921215" target="_blank" rel="noopener" class="btn btn-gold">Book Now</a>
+  </div>
+  <button class="menu-toggle" aria-label="Open menu"><span></span><span></span><span></span></button>
+</header>
+
+<nav class="mobile-nav">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="services.html">Services</a>
+  <a href="contact.html" class="active">Contact</a>
+  <a href="https://wa.me/971509921215" target="_blank" rel="noopener" class="btn btn-gold">Book Now</a>
+</nav>
+
+<header class="page-header">
+  <div class="hero-glow" style="opacity:0.18;"></div>
+  <div class="container">
+    <span class="eyebrow">Get in Touch</span>
+    <h1>Let's Plan<br>Your Visit</h1>
+    <p class="crumb"><a href="index.html" style="color:rgba(247,241,230,0.55)">Home</a> <span>/</span> Contact</p>
+  </div>
+</header>
+
+<!-- ===== Contact info + form ===== -->
+<section class="section">
+  <div class="container contact-grid">
+
+    <div class="reveal">
+      <span class="eyebrow">Visit, Call or Message</span>
+      <h2 style="font-size:var(--fs-h2); margin-top:1rem;">We're Easy to <span class="italic-serif">Reach</span></h2>
+      <p style="margin-top:1rem; color:rgba(21,17,15,0.65);">The fastest way to book is WhatsApp — most enquiries are answered within the hour.</p>
+
+      <div class="contact-info-card mt-2">
+        <div class="info-row">
+          <span class="ico">✦</span>
+          <div>
+            <h5>Address</h5>
+            <p>Al Tawakkal Typing Building, Mezzanine Floor, M03,<br>Musaffah ME9, Abu Dhabi, UAE</p>
+          </div>
+        </div>
+        <div class="info-row">
+          <span class="ico">✦</span>
+          <div>
+            <h5>Phone</h5>
+            <a href="tel:+971509921215">+971 50 992 1215</a>
+          </div>
+        </div>
+        <div class="info-row">
+          <span class="ico">✦</span>
+          <div>
+            <h5>WhatsApp</h5>
+            <a href="https://wa.me/971509921215" target="_blank" rel="noopener">+971 50 992 1215</a>
+          </div>
+        </div>
+        <div class="info-row">
+          <span class="ico">✦</span>
+          <div>
+            <h5>Instagram</h5>
+            <a href="https://www.instagram.com/ivysbeautysecret/?hl=en" target="_blank" rel="noopener">@ivysbeautysecret</a>
+          </div>
+        </div>
+        <div class="info-row">
+          <span class="ico">✦</span>
+          <div>
+            <h5>Hours</h5>
+            <table class="hours-table">
+              <tr><td>Saturday – Thursday</td><td>9:00 AM – 9:00 PM</td></tr>
+              <tr><td>Friday</td><td>2:00 PM – 9:00 PM</td></tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="reveal reveal-delay-2">
+      <div class="form-card">
+        <span class="eyebrow">Send an Enquiry</span>
+        <h3 style="font-family:var(--font-display); font-size:1.6rem; margin-top:0.8rem; margin-bottom:1.6rem;">Tell us what you're after</h3>
+        <form id="enquiryForm" onsubmit="return sendToWhatsApp(event)">
+          <div class="field-row">
+            <div class="field">
+              <label for="cName">Full Name</label>
+              <input type="text" id="cName" required placeholder="Your name">
+            </div>
+            <div class="field">
+              <label for="cPhone">Phone Number</label>
+              <input type="tel" id="cPhone" required placeholder="05X XXX XXXX">
+            </div>
+          </div>
+          <div class="field">
+            <label for="cService">Service Interested In</label>
+            <select id="cService">
+              <option>Hair Services</option>
+              <option>Beauty &amp; Makeup</option>
+              <option>Facials &amp; Skin Care</option>
+              <option>Nail Studio</option>
+              <option>Brows &amp; Lashes</option>
+              <option>Waxing</option>
+              <option>Wellness / Massage</option>
+              <option>Not Sure Yet</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="cDate">Preferred Date</label>
+            <input type="date" id="cDate">
+          </div>
+          <div class="field">
+            <label for="cMsg">Message</label>
+            <textarea id="cMsg" rows="4" placeholder="Tell us anything that helps us prepare for your visit"></textarea>
+          </div>
+          <button type="submit" class="btn btn-gold" style="width:100%; justify-content:center;">Send via WhatsApp</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="container reveal">
+    <div class="map-frame">
+      <iframe loading="lazy" src="https://www.google.com/maps?q=Al+Tawakkal+Typing+Building+Musaffah+ME9+Abu+Dhabi&output=embed" title="Map to Ivy's Beauty Secret Ladies Salon & Spa"></iframe>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">
+          <span class="brand-mark halo-ring"><img id="logoFooter" alt="Ivy's Beauty Secret crest"></span>
+          <span class="brand-text">
+            <span class="name" style="color:var(--ivory);">Ivy's Beauty Secret</span>
+            <span class="tag">Ladies Salon &amp; Spa</span>
+          </span>
+        </a>
+        <p>A private ladies salon &amp; spa in Musaffah, Abu Dhabi — be a pampered princess, one visit at a time.</p>
+        <div class="social-row mt-2">
+          <a href="https://www.instagram.com/ivysbeautysecret/?hl=en" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+          <a href="https://wa.me/971509921215" target="_blank" rel="noopener" aria-label="WhatsApp">WA</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Categories</h4>
+        <a href="services.html#hair">Hair Services</a>
+        <a href="services.html#beauty">Beauty &amp; Makeup</a>
+        <a href="services.html#nails">Nail Studio</a>
+        <a href="services.html#brows">Brows &amp; Waxing</a>
+      </div>
+      <div class="footer-col">
+        <h4>Visit</h4>
+        <p>Al Tawakkal Typing Building,<br>Mezzanine Floor, M03,<br>Musaffah ME9, Abu Dhabi</p>
+        <a href="tel:+971509921215">+971 50 992 1215</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span class="current-year"></span> Ivy's Beauty Secret Ladies Salon &amp; Spa. All rights reserved.</span>
+      <span>Designed with care in Abu Dhabi</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/971509921215" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.36 5.07L2 22l5.07-1.33A9.94 9.94 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm5.2 14.2c-.22.62-1.28 1.18-1.77 1.25-.45.07-1.02.1-1.65-.1-.38-.12-.87-.28-1.5-.55-2.64-1.14-4.36-3.8-4.5-3.98-.13-.18-1.08-1.43-1.08-2.73s.68-1.93.92-2.2c.24-.27.52-.33.7-.33.18 0 .35 0 .5.01.16.01.38-.06.6.46.22.53.75 1.83.82 1.96.07.13.11.29.02.47-.09.18-.13.29-.26.45-.13.16-.27.35-.39.47-.13.13-.26.27-.11.53.15.27.67 1.1 1.43 1.78.98.88 1.81 1.15 2.08 1.28.27.13.43.11.59-.07.16-.18.67-.78.85-1.05.18-.27.36-.22.6-.13.25.09 1.56.74 1.83.87.27.13.45.2.51.31.07.11.07.62-.15 1.24z"/></svg>
+</a>
+
+<script>
+  document.getElementById('logoHeader').src = LOGO_DATA_URI;
+  document.getElementById('logoFooter').src = LOGO_DATA_URI;
+
+  function sendToWhatsApp(e){
+    e.preventDefault();
+    const name = document.getElementById('cName').value;
+    const phone = document.getElementById('cPhone').value;
+    const service = document.getElementById('cService').value;
+    const date = document.getElementById('cDate').value;
+    const msg = document.getElementById('cMsg').value;
+    let text = `Hello Ivy's Beauty Secret, I'd like to book an appointment.\n\nName: ${name}\nPhone: ${phone}\nService: ${service}`;
+    if(date) text += `\nPreferred Date: ${date}`;
+    if(msg) text += `\nMessage: ${msg}`;
+    window.open(`https://wa.me/971509921215?text=${encodeURIComponent(text)}`, '_blank');
+    return false;
+  }
+</script>
+<script src="js/main.js"></script>
+</body>
+</html>
