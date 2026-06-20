@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery — Ivy's Beauty Secret Ladies Salon & Spa</title>
+<meta name="description" content="Browse real work from Ivy's Beauty Secret — hair, makeup, nails and facial treatments from our Musaffah, Abu Dhabi salon.">
+<link rel="icon" type="image/png" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo">
+      <img src="assets/logo.png" alt="Ivy's Beauty Secret" class="logo-img">
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="btn btn-outline nav-cta">Book Now</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ============ PAGE HERO ============ -->
+<section class="page-hero" style="height:42vh; min-height:300px;">
+  <div class="page-hero-media">
+    <img
+      src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?auto=format&fit=crop&w=1200&q=75"
+      srcset="https://images.unsplash.com/photo-1605497788044-5a32c7078486?auto=format&fit=crop&w=800&q=75 800w,
+              https://images.unsplash.com/photo-1605497788044-5a32c7078486?auto=format&fit=crop&w=1600&q=75 1600w"
+      sizes="100vw"
+      alt="Hair colour work from Ivy's Beauty Secret"
+      loading="eager" decoding="async" width="1600" height="900">
+  </div>
+  <div class="container page-hero-content">
+    <p class="page-hero-crumb"><a href="index.html">Home</a> &nbsp;/&nbsp; Gallery</p>
+    <h1 class="page-hero-title">Our Work</h1>
+    <p class="page-hero-sub">A look inside Ivy's — real transformations, real results.</p>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section class="story" style="padding-top: var(--space-lg);">
+  <div class="container">
+    <div class="gallery-filters reveal">
+      <button class="filter-pill active" data-filter="all">All</button>
+      <button class="filter-pill" data-filter="hair">Hair</button>
+      <button class="filter-pill" data-filter="makeup">Makeup</button>
+      <button class="filter-pill" data-filter="nails">Nails</button>
+      <button class="filter-pill" data-filter="facials">Facials</button>
+      <button class="filter-pill" data-filter="salon">The Salon</button>
+    </div>
+
+    <div class="masonry reveal">
+      <div class="masonry-item" data-category="hair" data-full="https://images.unsplash.com/photo-1519415510236-718bdfcd89c1?auto=format&fit=crop&w=1200&q=80">
+        <img src="https://images.unsplash.com/photo-1519415510236-718bdfcd89c1?auto=format&fit=crop&w=500&q=75" srcset="https://images.unsplash.com/photo-1519415510236-718bdfcd89c1?auto=format&fit=crop&w=400&q=75 400w, https://images.unsplash.com/photo-1519415510236-718bdfcd89c1?auto=format&fit=crop&w=700&q=75 700w" sizes="(max-width:600px) 45vw, 220px" loading="lazy" decoding="async" alt="Hair styling at Ivy's Beauty Secret">
+        <span class="masonry-item-tag">Hair</span>
+      </div>
+      <div class="masonry-item" data-category="facials" data-full="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1200&q=80">
+        <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=500&q=75" srcset="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=400&q=75 400w, https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=700&q=75 700w" sizes="(max-width:600px) 45vw, 220px" loading="lazy" decoding="async" alt="Facial treatment at Ivy's Beauty Secret">
+        <span class="masonry-item-tag">Facials</span>
+      </div>
+      <div class="masonry-item" data-category="nails" data-full="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=1200&q=80">
+        <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=500&q=75" srcset="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=400&q=75 400w, https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=700&q=75 700w" sizes="(max-width:600px) 45vw, 220px" loading="lazy" decoding="async" alt="Manicure detail at Ivy's Beauty Secret">
+        <span class="masonry-item-tag">Nails</span>
+      </div>
+      <div class="masonry-item" data-category="makeup" data-full="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=1200&q=80">
+        <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=500&q=75" srcset="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=400&q=75 400w, https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=700&q=75 700w" sizes="(max-width:600px) 45vw, 220px" loading="lazy" decoding="async" alt="Bridal makeup at Ivy's Beauty Secret">
+        <span class="masonry-item-tag">Makeup</span>
+      </div>
+      <div class="masonry-item" data-category="salon" data-full="https://images.unsplash.com/photo-1610992015732-2449b76344bc?auto=format&fit=crop&w=1200&q=80">
+        <img src="https://images.unsplash.com/photo-1610992015732-2449b76344bc?auto=format&fit=crop&w=500&q=75" srcset="https://images.unsplash.com/photo-1610992015732-2449b76344bc?auto=format&fit=crop&w=400&q=75 400w, https://images.unsplash.com/photo-1610992015732-2449b76344bc?auto=format&fit=crop&w=700&q=75 700w" sizes="(max-width:600px) 45vw, 220px" loading="lazy" decoding="async" alt="Ivy's Beauty Secret salon interior">
+        <span class="masonry-item-tag">The Salon</span>
+      </div>
+      <div class="masonry-item" data-category="nails" data-full="https://images.unsplash.com/photo-1571875257727-256c39da42af?auto=format&fit=crop&w=1200&q=80">
+        <img src="https://images.unsplash.com/photo-1571875257727-256c39da42af?auto=format&fit=crop&w=500&q=75" srcset="https://images.unsplash.com/photo-1571875257727-256c39da42af?auto=format&fit=crop&w=400&q=75 400w, https://images.unsplash.com/photo-1571875257727-256c39da42af?auto=format&fit=crop&w=700&q=75 700w" sizes="(max-width:600px) 45vw, 220px" loading="lazy" decoding="async" alt="Pedicure spa at Ivy's Beauty Secret">
+        <span class="masonry-item-tag">Nails</span>
+      </div>
+      <div class="masonry-item" data-category="hair" data-full="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=1200&q=80">
+        <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=500&q=75" srcset="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=400&q=75 400w, https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=700&q=75 700w" sizes="(max-width:600px) 45vw, 220px" loading="lazy" decoding="async" alt="Precision haircut at Ivy's Beauty Secret">
+        <span class="masonry-item-tag">Hair</span>
+      </div>
+      <div class="masonry-item" data-category="facials" data-full="https://images.unsplash.com/photo-1500840216050-6ffa99d75160?auto=format&fit=crop&w=1200&q=80">
+        <img src="https://images.unsplash.com/photo-1500840216050-6ffa99d75160?auto=format&fit=crop&w=500&q=75" srcset="https://images.unsplash.com/photo-1500840216050-6ffa99d75160?auto=format&fit=crop&w=400&q=75 400w, https://images.unsplash.com/photo-1500840216050-6ffa99d75160?auto=format&fit=crop&w=700&q=75 700w" sizes="(max-width:600px) 45vw, 220px" loading="lazy" decoding="async" alt="Skin care treatment at Ivy's Beauty Secret">
+        <span class="masonry-item-tag">Facials</span>
+      </div>
+      <div class="masonry-item" data-category="salon" data-full="https://images.unsplash.com/photo-1633681926022-84c23e8cb2d6?auto=format&fit=crop&w=1200&q=80">
+        <img src="https://images.unsplash.com/photo-1633681926022-84c23e8cb2d6?auto=format&fit=crop&w=500&q=75" srcset="https://images.unsplash.com/photo-1633681926022-84c23e8cb2d6?auto=format&fit=crop&w=400&q=75 400w, https://images.unsplash.com/photo-1633681926022-84c23e8cb2d6?auto=format&fit=crop&w=700&q=75 700w" sizes="(max-width:600px) 45vw, 220px" loading="lazy" decoding="async" alt="Spa treatment room at Ivy's Beauty Secret">
+        <span class="masonry-item-tag">The Salon</span>
+      </div>
+      <div class="masonry-item" data-category="makeup" data-full="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=1200&q=80">
+        <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=500&q=75" srcset="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=400&q=75 400w, https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=700&q=75 700w" sizes="(max-width:600px) 45vw, 220px" loading="lazy" decoding="async" alt="Bridal beauty look at Ivy's Beauty Secret">
+        <span class="masonry-item-tag">Makeup</span>
+      </div>
+      <div class="masonry-item" data-category="hair" data-full="https://images.unsplash.com/photo-1605497788044-5a32c7078486?auto=format&fit=crop&w=1200&q=80">
+        <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?auto=format&fit=crop&w=500&q=75" srcset="https://images.unsplash.com/photo-1605497788044-5a32c7078486?auto=format&fit=crop&w=400&q=75 400w, https://images.unsplash.com/photo-1605497788044-5a32c7078486?auto=format&fit=crop&w=700&q=75 700w" sizes="(max-width:600px) 45vw, 220px" loading="lazy" decoding="async" alt="Hair colour result at Ivy's Beauty Secret">
+        <span class="masonry-item-tag">Hair</span>
+      </div>
+      <div class="masonry-item" data-category="nails" data-full="https://images.unsplash.com/photo-1572297002238-4d57f0d3aac6?auto=format&fit=crop&w=1200&q=80">
+        <img src="https://images.unsplash.com/photo-1572297002238-4d57f0d3aac6?auto=format&fit=crop&w=500&q=75" srcset="https://images.unsplash.com/photo-1572297002238-4d57f0d3aac6?auto=format&fit=crop&w=400&q=75 400w, https://images.unsplash.com/photo-1572297002238-4d57f0d3aac6?auto=format&fit=crop&w=700&q=75 700w" sizes="(max-width:600px) 45vw, 220px" loading="lazy" decoding="async" alt="Manicure finish at Ivy's Beauty Secret">
+        <span class="masonry-item-tag">Nails</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ INSTAGRAM CTA ============ -->
+<section class="cta-band">
+  <div class="container">
+    <svg class="gold-flourish" viewBox="0 0 64 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 7c6-8 10 8 16 0s10 8 16 0 10 8 16 0 10-8 14 0" stroke="#C9A097" stroke-width="1.4" stroke-linecap="round"/></svg>
+    <p class="eyebrow">Want More?</p>
+    <h2>Follow along on Instagram.</h2>
+    <p>New transformations posted weekly — tag us in yours.</p>
+    <div class="cta-actions">
+      <a href="https://www.instagram.com/ivysbeautysecret/?hl=en" target="_blank" rel="noopener" class="btn btn-primary">@ivysbeautysecret</a>
+      <a href="contact.html" class="btn btn-outline" style="border-color:rgba(250,246,242,0.4); color:var(--ivory);">Book an Appointment</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <img src="assets/logo.png" alt="Ivy's Beauty Secret" class="footer-logo-img">
+        <p>Premium ladies salon & spa in the heart of Musaffah, Abu Dhabi.</p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/ivysbeautysecret/?hl=en" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+          </a>
+          <a href="https://wa.me/971509921215" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.37 5.07L2 22l5.07-1.33A9.93 9.93 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm5.2 14.2c-.22.6-1.27 1.18-1.76 1.22-.45.05-1.02.07-1.65-.1-.38-.1-.87-.27-1.5-.53-2.63-1.14-4.34-3.8-4.47-3.98-.13-.18-1.07-1.42-1.07-2.71 0-1.29.68-1.92.92-2.18.24-.26.52-.32.7-.32.18 0 .35 0 .5.01.16.01.38-.06.6.46.22.53.75 1.83.82 1.96.07.13.11.29.02.47-.09.18-.13.29-.27.45-.13.16-.28.35-.4.47-.13.13-.27.27-.12.53.16.26.7 1.15 1.5 1.86 1.03.92 1.9 1.21 2.16 1.34.26.13.41.11.56-.07.16-.18.66-.77.84-1.03.18-.26.35-.21.59-.13.24.09 1.53.72 1.79.85.26.13.43.2.5.31.07.12.07.66-.15 1.26z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Explore</h5>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services & Pricing</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Book Now</a>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <p>Al Tawakkal Typing Building,<br>Mezzanine Floor, M03, Musaffah ME9,<br>Abu Dhabi, UAE</p>
+        <a href="tel:+971509921215">+971 50 992 1215</a>
+      </div>
+      <div class="footer-col">
+        <h5>Hours</h5>
+        <p>Sat – Thu: 9:00 AM – 9:00 PM</p>
+        <p>Friday: 2:00 PM – 9:00 PM</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Ivy's Beauty Secret Ladies Salon & Spa. All rights reserved.</span>
+      <span>Musaffah, Abu Dhabi, UAE</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ FLOATING ACTIONS ============ -->
+<div class="float-actions">
+  <a href="https://www.instagram.com/ivysbeautysecret/?hl=en" target="_blank" rel="noopener" class="float-btn instagram" aria-label="Visit our Instagram">
+    <span class="float-label">Follow on Instagram</span>
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+  </a>
+  <a href="https://wa.me/971509921215?text=Hi%20Ivy's%20Beauty%20Secret%2C%20I'd%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener" class="float-btn whatsapp" aria-label="Chat on WhatsApp">
+    <span class="float-label">Chat on WhatsApp</span>
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.37 5.07L2 22l5.07-1.33A9.93 9.93 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm5.2 14.2c-.22.6-1.27 1.18-1.76 1.22-.45.05-1.02.07-1.65-.1-.38-.1-.87-.27-1.5-.53-2.63-1.14-4.34-3.8-4.47-3.98-.13-.18-1.07-1.42-1.07-2.71 0-1.29.68-1.92.92-2.18.24-.26.52-.32.7-.32.18 0 .35 0 .5.01.16.01.38-.06.6.46.22.53.75 1.83.82 1.96.07.13.11.29.02.47-.09.18-.13.29-.27.45-.13.16-.28.35-.4.47-.13.13-.27.27-.12.53.16.26.7 1.15 1.5 1.86 1.03.92 1.9 1.21 2.16 1.34.26.13.41.11.56-.07.16-.18.66-.77.84-1.03.18-.26.35-.21.59-.13.24.09 1.53.72 1.79.85.26.13.43.2.5.31.07.12.07.66-.15 1.26z"/></svg>
+  </a>
+</div>
+
+<!-- ============ LIGHTBOX ============ -->
+<div class="lightbox">
+  <button class="lightbox-close" aria-label="Close">✕</button>
+  <button class="lightbox-nav lightbox-prev" aria-label="Previous">‹</button>
+  <img src="" alt="Gallery image preview">
+  <button class="lightbox-nav lightbox-next" aria-label="Next">›</button>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
